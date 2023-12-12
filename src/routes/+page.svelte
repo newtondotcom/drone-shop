@@ -1,4 +1,11 @@
-<div class="h-[250px]"></div>
+<script lang="ts">
+    import Testimonials from '$lib/Testimonials.svelte';
+    import Title from '$lib/Title.svelte';
+</script>
+
+<div class="h-[250px]">
+    <img src="/avata.jpg" alt="test" class="w-full h-full object-cover">
+</div>
 
 <section class="overflow-hidden bg-gray-800 sm:grid sm:grid-cols-2">
     <div class="p-8 md:p-12 lg:px-16 lg:py-24">
@@ -29,7 +36,7 @@
     />
 </section>
 
-<div class="flex flex-col justify-center mx-auto">
+<div class="flex flex-col justify-center mx-auto bg-gray-200">
     <img 
     src="/avata.jpg"
     alt="test"
@@ -37,4 +44,17 @@
     >
 </div>
 
-  
+<!--
+<Testimonials />
+-->
+
+<div class="bg-slate-300 opacity-50 flex flex-col px-[50px]">
+
+    <Title title="Who We Are" subtitle="New England Drone Tours is a full-service video production company based out of Boston, MA. We specialize in drone tour videos for real estate, businesses, hotels, offices, venues, and more!" />
+    <ul class="self-center">
+        <li>Part 107 Certified</li>
+        <li>10+ Years flying Drones</li>
+        <li>$10 Million Liability Insurance</li>
+    </ul>
+
+</div>
