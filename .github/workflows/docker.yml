@@ -1,7 +1,7 @@
 name: Build and Push Docker Images
 
 env:
-  DOCKER_TAG : newtondotcom/yogocap:latest
+  DOCKER_TAG : newtondotcom/droneshop:latest
 
 on:
   workflow_dispatch:
