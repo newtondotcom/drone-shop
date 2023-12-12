@@ -48,21 +48,13 @@
         </div>
   
         <div class="flex items-center gap-4">
-          <div class="sm:flex sm:gap-4">
-            <a
-              class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-              href="/"
-            >
-              Login
-            </a>
-  
+          <div class="sm:flex sm:gap-4">  
             <div class="hidden sm:flex">
-              <a
+              <button
                 class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                href="/"
               >
-                Register
-              </a>
+                Book now
+              </button>
             </div>
           </div>
   
