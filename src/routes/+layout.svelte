@@ -2,11 +2,11 @@
     import "../app.css";
   </script>
   
-  <header class="bg-white">
+  <header class="bg-gray-800 text-white">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
-          <a class="block text-teal-600" href="/">
+          <a class="block" href="/">
             <span class="sr-only">Home</span>
             <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -21,27 +21,27 @@
           <nav aria-label="Global">
             <ul class="flex items-center gap-6 text-sm">
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="/"> About </a>
+                <a class="transition hover:text-gray-500/75" href="/"> About </a>
               </li>
   
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="/"> Careers </a>
+                <a class="transition hover:text-gray-500/75" href="/"> Careers </a>
               </li>
   
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="/"> History </a>
+                <a class="transition hover:text-gray-500/75" href="/"> History </a>
               </li>
   
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="/"> Services </a>
+                <a class="transition hover:text-gray-500/75" href="/"> Services </a>
               </li>
   
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="/"> Projects </a>
+                <a class="transition hover:text-gray-500/75" href="/"> Projects </a>
               </li>
   
               <li>
-                <a class="text-gray-500 transition hover:text-gray-500/75" href="/"> Blog </a>
+                <a class="transition hover:text-gray-500/75" href="/"> Blog </a>
               </li>
             </ul>
           </nav>
@@ -83,6 +83,9 @@
         </div>
       </div>
     </div>
+    <div class="h-[5px] bg-slate-300"></div>
   </header>
   
+<main class="bg-gray-800">
   <slot />
+</main>
