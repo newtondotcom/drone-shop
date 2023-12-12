@@ -1,6 +1,8 @@
 <script lang="ts">
     import Testimonials from '$lib/Testimonials.svelte';
     import Title from '$lib/Title.svelte';
+    import Youtube from "svelte-youtube-embed";
+    import Footer from '$lib/Footer.svelte';
 </script>
 
 <div class="h-[250px]">
@@ -48,13 +50,18 @@
 <Testimonials />
 -->
 
-<div class="bg-slate-300 opacity-50 flex flex-col px-[50px]">
-
+<div class="bg-slate-300 opacity-50 flex flex-col px-[50px] py-[20px]">
     <Title title="Who We Are" subtitle="New England Drone Tours is a full-service video production company based out of Boston, MA. We specialize in drone tour videos for real estate, businesses, hotels, offices, venues, and more!" />
     <ul class="self-center">
         <li>Part 107 Certified</li>
         <li>10+ Years flying Drones</li>
         <li>$10 Million Liability Insurance</li>
     </ul>
-
 </div>
+
+<div class="flex flex-col text-white">
+    <div class="flex self-center my-8 text-5xl">SHOWREEL</div>
+    <Youtube id="q2Y3f0lHnMs" />
+</div>
+
+<Footer />
