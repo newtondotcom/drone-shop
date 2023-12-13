@@ -1,5 +1,6 @@
 <script>
-    import "../app.css";
+    import Divider from "$lib/Divider.svelte";
+import "../app.css";
   </script>
   
   <header class="bg-gray-800 text-white">
@@ -59,7 +60,7 @@
           </div>
   
           <div class="block md:hidden">
-            <button class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+            <button class="rounded bg-gray-100 p-2 text-gray-400 transition hover:text-gray-400/75">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -75,7 +76,7 @@
         </div>
       </div>
     </div>
-    <div class="h-[5px] bg-slate-300"></div>
+    <Divider />
   </header>
   
 <main class="bg-gray-800">
