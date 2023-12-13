@@ -38,26 +38,28 @@
     />
 </section>
 
-<div class="flex flex-col justify-center mx-auto bg-gray-200">
-    <img 
-    src="/avata.jpg"
-    alt="test"
-    class="w-2/3 mx-auto"
-    >
+<div class="relative">
+  <img 
+      src="/avata.png"
+      alt="test"
+      class="w-2/3 mx-auto opacity-60 -translate-y-[100px]"
+  >
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 text-center text-white h-40 px-[20px] py-[20px]">
+    <h2 class="text-7xl py-6">Who We Are</h2>
+    <h3 class="text-4xl py-4">New England Drone Tours is a full-service video production company based out of Boston, MA. We specialize in drone tour videos for real estate, businesses, hotels, offices, venues, and more!</h3>
+    <ul class="self-center text-2xl py-2">
+      <li>Part 107 Certified</li>
+      <li>10+ Years flying Drones</li>
+      <li>$10 Million Liability Insurance</li>
+    </ul>
+  </div>
 </div>
+
+
 
 <!--
 <Testimonials />
 -->
-
-<div class="bg-slate-300 opacity-50 flex flex-col px-[50px] py-[20px]">
-    <Title title="Who We Are" subtitle="New England Drone Tours is a full-service video production company based out of Boston, MA. We specialize in drone tour videos for real estate, businesses, hotels, offices, venues, and more!" />
-    <ul class="self-center">
-        <li>Part 107 Certified</li>
-        <li>10+ Years flying Drones</li>
-        <li>$10 Million Liability Insurance</li>
-    </ul>
-</div>
 
 <div class="flex flex-col text-white">
     <div class="flex self-center my-8 text-5xl">SHOWREEL</div>
