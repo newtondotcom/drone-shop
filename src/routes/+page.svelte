@@ -3,6 +3,7 @@
     import Title from '$lib/Title.svelte';
     import Youtube from "svelte-youtube-embed";
     import Footer from '$lib/Footer.svelte';
+    import Divider from '$lib/Divider.svelte';
 </script>
 
 <div class="h-[250px]">
@@ -30,13 +31,15 @@
         </div>
       </div>
     </div>
-  
-    <img
-      alt="Student"
-      src="/camera.gif"
-      class="h-56 w-full object-cover sm:h-full"
-    />
+    <div class="flex flex-col align-middle self-center">
+      <img
+        alt="Student"
+        src="/camera.gif"
+        class="flex h-20 w-full object-cover sm:h-3/4"
+      />
+    </div>
 </section>
+<Divider />
 
 <div class="relative">
   <img 
@@ -44,7 +47,7 @@
       alt="test"
       class="w-2/3 mx-auto opacity-60 -translate-y-[100px]"
   >
-  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/3 text-center text-white h-40 px-[20px] py-[20px]">
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-3/4 text-center text-white h-40 px-[20px] py-[20px]">
     <h2 class="text-7xl py-6">Who We Are</h2>
     <h3 class="text-4xl py-4">New England Drone Tours is a full-service video production company based out of Boston, MA. We specialize in drone tour videos for real estate, businesses, hotels, offices, venues, and more!</h3>
     <ul class="self-center text-2xl py-2">
@@ -54,6 +57,7 @@
     </ul>
   </div>
 </div>
+<div class="h-1/3"></div>
 
 
 
@@ -61,7 +65,9 @@
 <Testimonials />
 -->
 
-<div class="flex flex-col text-white">
+<Divider />
+
+<div class="flex flex-col text-white xl:w-4/5 mx-auto">
     <div class="flex self-center my-8 text-5xl">SHOWREEL</div>
     <Youtube id="q2Y3f0lHnMs" />
 </div>
