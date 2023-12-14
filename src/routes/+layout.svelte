@@ -1,4 +1,5 @@
 <script>
+    import { goto } from "$app/navigation";
     import Divider from "$lib/Divider.svelte";
 import "../app.css";
   </script>
@@ -11,7 +12,7 @@ import "../app.css";
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
-          <a class="block" href="/">
+          <button class="block" >
             <span class="sr-only">Home</span>
             <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -19,34 +20,30 @@ import "../app.css";
                 fill="currentColor"
               />
             </svg>
-          </a>
+          </button>
         </div>
   
         <div class="hidden md:block">
           <nav aria-label="Global">
             <ul class="flex items-center gap-6 text-sm">
               <li>
-                <a class="transition hover:text-gray-500/75" href="/"> About </a>
+                <button class="transition hover:text-gray-500/75" on:click={()=>goto("/")}> Home </button>
               </li>
   
               <li>
-                <a class="transition hover:text-gray-500/75" href="/"> Careers </a>
+                <button class="transition hover:text-gray-500/75" on:click={()=>goto("/services")}> Services </button>
               </li>
   
               <li>
-                <a class="transition hover:text-gray-500/75" href="/"> History </a>
+                <button class="transition hover:text-gray-500/75" on:click={()=>goto("/portfolio")}> Portfolio </button>
               </li>
   
               <li>
-                <a class="transition hover:text-gray-500/75" href="/"> Services </a>
+                <button class="transition hover:text-gray-500/75" on:click={()=>goto("/qa")}> FAQ </button>
               </li>
   
               <li>
-                <a class="transition hover:text-gray-500/75" href="/"> Projects </a>
-              </li>
-  
-              <li>
-                <a class="transition hover:text-gray-500/75" href="/"> Blog </a>
+                <button class="transition hover:text-gray-500/75" on:click={()=>goto("/contact")}> Contact </button>
               </li>
             </ul>
           </nav>
