@@ -50,6 +50,7 @@
             </p>
         </div>
 
+        <form on:submit={handleSubmit} autocomplete="off">
         <div class="flex align-middle self-center mt-4">
             <label
                 for="UserName"
@@ -112,10 +113,12 @@
         <div class="flex self-center sm:gap-4">  
             <button
                 class="rounded-md mt-5 bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
+                type="submit"
             >
                 Send it
             </button>
         </div>
+        </form>
     {/if}
 
 </div>
