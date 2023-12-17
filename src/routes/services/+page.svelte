@@ -3,41 +3,54 @@
     import Title from "$lib/Title.svelte";
 
     let services = [
-        {
-            title : "Residential",
-            description : "Sell your residential listings faster with Indoor Drone Tours!",
-            img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        },
-        {
-            title : "Local Business",
-            description : "Showcase your business with Indoor Drone Tours!",
-            img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        },
-        {
-            title : "Office",
-            description : "Virtual Tours and Drone Video For Office Buildings",
-            img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        },
-        {
-            title : "Hostel",
-            description : "Fly through your hotel and resort with Indoor Drone Tours",
-            img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        },
-        {
-            title : "Construction",
-            description : "Capture your construction projects like never before with Indoor Drone Tours!",
-            img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        },
-        {
-            title : "Industrial",
-            description : "Sell your industrial listings faster with Indoor Drone Tours!",
-            img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-        }
-    ]
+    {
+        title : "Residential",
+        description : "Sell your residential listings faster with Indoor Drone Tours!",
+        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        price : "199",
+        duration: 90
+    },
+    {
+        title : "Local Business",
+        description : "Showcase your business with Indoor Drone Tours!",
+        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        price : "199",
+        duration: 90
+    },
+    {
+        title : "Office",
+        description : "Virtual Tours and Drone Video For Office Buildings",
+        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        price : "199",
+        duration: 90
+    },
+    {
+        title : "Hostel",
+        description : "Fly through your hotel and resort with Indoor Drone Tours",
+        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        price : "199",
+        duration: 90
+    },
+    {
+        title : "Construction",
+        description : "Capture your construction projects like never before with Indoor Drone Tours!",
+        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        price : "199",
+        duration: 90
+    },
+    {
+        title : "Industrial",
+        description : "Sell your industrial listings faster with Indoor Drone Tours!",
+        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+        price : "199",
+        duration: 90
+    }
+];
+
 
 </script>
 
-<div class="max-w-screen-xl bg-gray-800 mx-auto px-5 min-h-screen">
+<div class="max-w-screen-xl bg-gray-800 mx-auto px-5 min-h-screen pb-20">
     <Title title="We fly drones indoors to create seamless video tours" 
     subtitle="The premier virtual tour for commercial real estate, businesses, hotels, apartment leasing, & more" />
 
@@ -65,7 +78,16 @@
             </div>
           </dl>
       
-          <div class="mt-6 flex items-center gap-8 text-xs">
+          <div class="mt-6 flex items-center gap-8 text-xs align-middle justify-center">
+            <!--
+            <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+              <svg class="h-4 w-4 text-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
+              <div class="mt-1.5 sm:mt-0">
+                <p class="text-gray-500">Parking</p>
+                <p class="font-medium">2 spaces</p>
+              </div>
+            </div>
+
             <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
               <svg class="h-4 w-4 text-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
               <div class="mt-1.5 sm:mt-0">
@@ -96,27 +118,21 @@
                 <p class="font-medium">2 rooms</p>
               </div>
             </div>
+            -->
+
+            <div class="msm:flex msm:flex-row sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+              <svg viewBox="0 0 24 24" class="w-6 text-indigo-500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7V12L14.5 10.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+              <div class="mt-1.5 sm:mt-0 msm:ml-2">
+                <p class="text-gray-500">Prestation</p>
+                <p class="font-medium">{service.duration} min</p>
+              </div>
+            </div>
       
-            <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-              <svg
-                class="h-4 w-4 text-indigo-700"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                />
-              </svg>
-      
-              <div class="mt-1.5 sm:mt-0">
-                <p class="text-gray-500">Bedroom</p>
-      
-                <p class="font-medium">4 rooms</p>
+            <div class="msm:flex msm:flex-row sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
+              <svg fill="currentColor" class="w-6 text-indigo-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21,12.692,11.308,3H3v8.308L12.692,21ZM9.923,9.923a1.958,1.958,0,1,1,0-2.769A1.957,1.957,0,0,1,9.923,9.923Z"></path></g></svg>
+              <div class="mt-1.5 sm:mt-0 msm:ml-2">
+                <p class="text-gray-500">Starting from</p>
+                <p class="font-medium">{service.price}€</p>
               </div>
             </div>
           </div>
