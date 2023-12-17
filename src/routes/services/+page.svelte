@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { goto } from "$app/navigation";
     import Title from "$lib/Title.svelte";
 
     let services = [
@@ -37,10 +38,14 @@
 </script>
 
 <div class="max-w-screen-xl bg-gray-800 mx-auto px-5 min-h-screen">
-    <Title title="We fly drones indoors to create seamless video tours" subtitle="The premier virtual tour for commercial real estate, businesses, hotels, apartment leasing, & more" />
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    <Title title="We fly drones indoors to create seamless video tours" 
+    subtitle="The premier virtual tour for commercial real estate, businesses, hotels, apartment leasing, & more" />
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
     {#each services as service}
-    <button class="block rounded-lg p-4 shadow-sm shadow-indigo-100">
+    <button
+    on:click={() => goto(`/contact`)} 
+    class="block rounded-lg p-4 shadow-sm shadow-indigo-100 bg-slate-200">
         <img
           alt="Home"
           src="{service.img}"
@@ -62,24 +67,9 @@
       
           <div class="mt-6 flex items-center gap-8 text-xs">
             <div class="sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
-              <svg
-                class="h-4 w-4 text-indigo-700"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
-                />
-              </svg>
-      
+              <svg class="h-4 w-4 text-indigo-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
               <div class="mt-1.5 sm:mt-0">
                 <p class="text-gray-500">Parking</p>
-      
                 <p class="font-medium">2 spaces</p>
               </div>
             </div>
