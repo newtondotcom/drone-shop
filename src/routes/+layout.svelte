@@ -1,6 +1,7 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import Divider from "$lib/Divider.svelte";
+    import Footer from "$lib/Footer.svelte";
     import "../app.css";
 
     import "nprogress/nprogress.css";
@@ -133,3 +134,7 @@
 <main class="bg-gray-800">
   <slot />
 </main>
+
+
+
+<Footer />

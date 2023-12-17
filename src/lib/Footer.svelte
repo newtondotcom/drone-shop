@@ -1,4 +1,4 @@
-<footer class="flex">
+<footer class="flex bg-gray-800">
     <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
       <div class="flex justify-center text-teal-600">
         <img src="/camera.gif" alt="" class="h-14"/>

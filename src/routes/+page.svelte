@@ -1,11 +1,15 @@
 <script lang="ts">
     import Youtube from "svelte-youtube-embed";
-    import Footer from '$lib/Footer.svelte';
     import Divider from '$lib/Divider.svelte';
 </script>
 
 <div class="lg:h-[250px] sm:h-[100px]">
-    <img src="/avata.jpg" alt="test" class="w-full h-full object-cover">
+    <!-- svelte-ignore a11y-media-has-caption -->
+    <video 
+    src="/video.mp4" 
+    autoplay 
+    loop
+    class="w-full h-full object-cover">
 </div>
 
 <section class="overflow-hidden flex flex-row align-middle justify-center bg-gray-800 sm:grid sm:grid-cols-2">
@@ -68,5 +72,3 @@
     <div class="flex self-center my-8 text-5xl">SHOWREEL</div>
     <Youtube id="zHKfHjk8EiY" />
 </div>
-
-<Footer />
