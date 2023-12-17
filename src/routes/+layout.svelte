@@ -41,10 +41,6 @@ import "../app.css";
               <li>
                 <button class="transition hover:text-gray-500/75" on:click={()=>goto("/qa")}> FAQ </button>
               </li>
-  
-              <li>
-                <button class="transition hover:text-gray-500/75" on:click={()=>goto("/contact")}> Contact </button>
-              </li>
             </ul>
           </nav>
         </div>
@@ -53,6 +49,7 @@ import "../app.css";
           <div class="sm:flex sm:gap-4">  
             <div class="hidden sm:flex">
               <button
+                on:click={()=>goto("/contact")}
                 class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
               >
                 Book now
