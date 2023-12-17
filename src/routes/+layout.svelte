@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { goto } from "$app/navigation";
     import Divider from "$lib/Divider.svelte";
     import "../app.css";
@@ -16,6 +16,14 @@
             NProgress.start();
         } else NProgress.done();
     }
+
+    let menu = false;
+
+    function goMobile(route: string) {
+      menu = !menu;
+      goto(route);
+    }
+
 
   </script>
 
@@ -37,28 +45,29 @@
             </svg>
           </button>
         </div>
-  
-        <div class="hidden md:block">
-          <nav aria-label="Global">
-            <ul class="flex items-center gap-6 text-sm">
-              <li>
-                <button class="transition hover:text-gray-500/75" on:click={()=>goto("/")}> Home </button>
-              </li>
-  
-              <li>
-                <button class="transition hover:text-gray-500/75" on:click={()=>goto("/services")}> Services </button>
-              </li>
-  
-              <li>
-                <button class="transition hover:text-gray-500/75" on:click={()=>goto("/portfolio")}> Portfolio </button>
-              </li>
-  
-              <li>
-                <button class="transition hover:text-gray-500/75" on:click={()=>goto("/qa")}> FAQ </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
+          {#if !menu}
+          <div class="hidden md:block">
+            <nav aria-label="Global">
+              <ul class="flex items-center gap-6 text-sm">
+                <li>
+                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/")}> Home </button>
+                </li>
+    
+                <li>
+                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/services")}> Services </button>
+                </li>
+    
+                <li>
+                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/portfolio")}> Portfolio </button>
+                </li>
+    
+                <li>
+                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/qa")}> FAQ </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          {/if}
   
         <div class="flex items-center gap-4">
           <div class="sm:flex sm:gap-4">  
@@ -73,7 +82,10 @@
           </div>
   
           <div class="block md:hidden">
-            <button class="rounded bg-gray-100 p-2 text-gray-400 transition hover:text-gray-400/75">
+            <button 
+            class="rounded bg-gray-100 p-2 text-gray-400 transition hover:text-gray-400/75"
+            on:click={()=>menu = !menu}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -86,11 +98,37 @@
               </svg>
             </button>
           </div>
+          
         </div>
       </div>
     </div>
+  
+    {#if menu}
+      <nav aria-label="Global">
+        <ul class=" w-full flex-col align-middle justify-center text-center items-center gap-6 text-lg mb-2">
+          <li>
+            <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/")}> Home </button>
+          </li>
+    
+          <li>
+            <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/services")}> Services </button>
+          </li>
+    
+          <li>
+            <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/portfolio")}> Portfolio </button>
+          </li>
+    
+          <li>
+            <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/qa")}> FAQ </button>
+          </li>
+        </ul>
+      </nav>
+    {/if}
+
     <Divider />
   </header>
+
+
   
 <main class="bg-gray-800">
   <slot />
