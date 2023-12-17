@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-col align-middle self-center">
+    <div class="flex flex-col align-middle self-center msm:hidden">
       <img
         alt="Student"
         src="/camera.gif"
@@ -45,10 +45,10 @@
       alt="test"
       class="lg:w-2/3 mx-auto opacity-70 lg:-translate-y-[100px]"
   >
-  <div class="absolute top-1/2 left-1/2 transform lg:-translate-x-1/2 lg:-translate-y-3/4 text-center text-white lg:h-40 lg:px-[20px] lg:py-[20px]">
-    <h2 class="text-7xl py-6">Who We Are</h2>
-    <h3 class="text-4xl py-4">New England Drone Tours is a full-service video production company based out of Boston, MA. We specialize in drone tour videos for real estate, businesses, hotels, offices, venues, and more!</h3>
-    <ul class="self-center text-2xl py-2">
+  <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 lg:-translate-y-3/4 text-center text-white lg:h-40 lg:px-[20px] lg:py-[20px]">
+    <h2 class="text-7xl py-6 msm:text-lg">Who We Are</h2>
+    <h3 class="text-4xl py-4 msm:text-md">New England Drone Tours is a full-service video production company based out of Boston, MA. We specialize in drone tour videos for real estate, businesses, hotels, offices, venues, and more!</h3>
+    <ul class="self-center text-2xl msm:text-sm py-2">
       <li>Part 107 Certified</li>
       <li>10+ Years flying Drones</li>
       <li>$10 Million Liability Insurance</li>
@@ -64,7 +64,7 @@
 
 <Divider />
 
-<div class="flex flex-col text-white lg:w-4/5 mx-auto my-4">
+<div class="flex flex-col text-white lg:w-4/5 mx-auto py-4 msm:px-4">
     <div class="flex self-center my-8 text-5xl">SHOWREEL</div>
     <Youtube id="zHKfHjk8EiY" />
 </div>
