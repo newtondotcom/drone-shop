@@ -1,7 +1,22 @@
 <script>
     import { goto } from "$app/navigation";
     import Divider from "$lib/Divider.svelte";
-import "../app.css";
+    import "../app.css";
+
+    import "nprogress/nprogress.css";
+    import NProgress from "nprogress";
+    import { navigating } from "$app/stores";
+
+    NProgress.configure({
+        minimum: 0.16,
+    });
+
+    $: {
+        if ($navigating) {
+            NProgress.start();
+        } else NProgress.done();
+    }
+
   </script>
 
   <svelte:head>
