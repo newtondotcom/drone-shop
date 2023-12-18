@@ -27,6 +27,10 @@
 
 </script>
 
+<svelte:head>
+  <title>Contanct | NEDT</title> 
+</svelte:head>
+
 <div class="flex flex-col justify-center align-middle min-h-screen ">
 
     {#if isSubmitted}

@@ -3,6 +3,10 @@
     import Divider from '$lib/Divider.svelte';
 </script>
 
+<svelte:head>
+  <title>New England Drone Tour</title> 
+</svelte:head>
+
 <div class="lg:h-[250px] sm:h-[100px]">
     <!-- svelte-ignore a11y-media-has-caption -->
     <video 

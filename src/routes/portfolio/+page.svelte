@@ -40,6 +40,10 @@
 
 </script>
 
+<svelte:head>
+  <title>Portfolio | NEDT</title> 
+</svelte:head>
+
 <div class="min-h-screen bg-gray-800">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:px-20 lg:py-8 gap-4">
         {#each videos as video}

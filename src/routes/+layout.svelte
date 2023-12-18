@@ -27,10 +27,6 @@
 
 
   </script>
-
-  <svelte:head>
-    <title>New England Drone Tour</title> 
-  </svelte:head>
   
   <header class="bg-gray-800 text-white">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
