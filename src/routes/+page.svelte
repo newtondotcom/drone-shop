@@ -65,16 +65,6 @@
 </div>
 </div>
 
-<div class="flex flex-col text-white lg:w-4/5 mx-auto py-4 msm:px-4">
-  <div class="flex self-center my-8 text-5xl">{translate("showreel")}</div>
-  <Youtube id="mS7L6ite8TI" />
-</div>
-
-<Footer />
-
-
-
-
 <!--
 <Testimonials />
 -->
@@ -85,5 +75,3 @@
     <div class="flex self-center my-8 text-5xl">SHOWREEL</div>
     <Youtube id="zHKfHjk8EiY" />
 </div>
-
-<Footer />
