@@ -43,7 +43,7 @@ const translations = {
       "years_flying_drones": "Plus de 10 ans de vol en drone",
       "liability_insurance": "Assurance responsabilité civile de 10 millions de dollars",
       "video_montage": "Montage vidéo et effets sonores",
-      "showreel": "BANDE DÉMO",
+      "showreel": "PORTFOLIO",
       "footer_company_name": "New England Drone Tours",
       "footer_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.",
         "formSubmitted": "Votre message a bien été envoyé !",
