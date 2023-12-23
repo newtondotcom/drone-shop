@@ -1,54 +1,99 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import Title from "$lib/Title.svelte";
+    import { onMount } from "svelte";
 
-    let services = [
-    {
-        title : "Residential",
-        description : "Sell your residential listings faster with Indoor Drone Tours!",
-        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-        price : "199",
-        duration: 90
-    },
-    {
-        title : "Local Business",
-        description : "Showcase your business with Indoor Drone Tours!",
-        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-        price : "199",
-        duration: 90
-    },
-    {
-        title : "Office",
-        description : "Virtual Tours and Drone Video For Office Buildings",
-        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-        price : "199",
-        duration: 90
-    },
-    {
-        title : "Hostel",
-        description : "Fly through your hotel and resort with Indoor Drone Tours",
-        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-        price : "199",
-        duration: 90
-    },
-    {
-        title : "Construction",
-        description : "Capture your construction projects like never before with Indoor Drone Tours!",
-        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-        price : "199",
-        duration: 90
-    },
-    {
-        title : "Industrial",
-        description : "Sell your industrial listings faster with Indoor Drone Tours!",
-        img : "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-        price : "199",
-        duration: 90
-    }
+  let services = [
+  {
+      "en": {
+          title: "Residential",
+          description: "Sell your residential listings faster with Indoor Drone Tours!",
+          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          price: "199",
+          duration: 90
+      },
+      "fr": {
+          title: "Résidentiel",
+          description: "Vendez vos annonces résidentielles plus rapidement avec les visites en drone intérieur !",
+          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          price: "199",
+          duration: 90
+      }
+  },
+  {
+      "en": {
+          title: "Local Business",
+          description: "Showcase your business with Indoor Drone Tours!",
+          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          price: "199",
+          duration: 90
+      },
+      "fr": {
+          title: "Entreprise Locale",
+          description: "Mettez en valeur votre entreprise avec les visites en drone intérieur !",
+          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          price: "199",
+          duration: 90
+      }
+  },
+  {
+      "en": {
+          title: "Office",
+          description: "Virtual Tours and Drone Video For Office Buildings",
+          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          price: "199",
+          duration: 90
+      },
+      "fr": {
+          title: "Bureau",
+          description: "Visites virtuelles et vidéos de drones pour les immeubles de bureaux",
+          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          price: "199",
+          duration: 90
+      }
+  },
+  {
+      "en": {
+          title: "Hostel",
+          description: "Fly through your hotel and resort with Indoor Drone Tours",
+          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          price: "199",
+          duration: 90
+      },
+      "fr": {
+          title: "Auberge de Jeunesse",
+          description: "Parcourez votre hôtel et votre complexe avec les visites en drone intérieur",
+          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          price: "199",
+          duration: 90
+      }
+  },
+  {
+      "en": {
+          title: "Construction",
+          description: "Capture your construction projects like never before with Indoor Drone Tours!",
+          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          price: "199",
+          duration: 90
+      },
+      "fr": {
+          title: "Construction",
+          description: "Capturez vos projets de construction comme jamais auparavant avec les visites en drone intérieur !",
+          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          price: "199",
+          duration: 90
+      }
+  }
 ];
 
+onMount(() => {
+        let lang = navigator.language.split("-")[0];
+        if (lang !== "fr" && lang !== "en") lang = "en";
+        services = services.map(q => q[lang]);
+});
 
 </script>
+
 
 <div class="max-w-screen-xl bg-gray-800 mx-auto px-5 min-h-screen pb-20">
     <Title title="We fly drones indoors to create seamless video tours" 
