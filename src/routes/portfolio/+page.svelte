@@ -1,38 +1,35 @@
 <script lang="ts">
     import Youtube from "svelte-youtube-embed";
+    import { onMount } from "svelte";
 
-    const videos = [
+    let videos = [
         {
-            id : "zHKfHjk8EiY",
-            title : "New England Drone Tours",
-            description : "We fly small drones indoors creating seamless walkthrough videos for real estate, businesses, hotels, & more."
+            "en": {
+                id: "KjyyQyEjXqM",
+                description: "A lively virtual tour of a seaside house. These lively videos can be created for private properties of any kind."
+            },
+            "fr": {
+                id: "KjyyQyEjXqM",
+                description: "Une visite virtuelle animée d'une maison en bord de mer. Ces vidéos animées peuvent être créées pour des propriétés privées de toutes sortes."
+            }
         },
         {
-            id : "zHKfHjk8EiY",
-            title : "New England Drone Tours",
-            description : "We fly small drones indoors creating seamless walkthrough videos for real estate, businesses, hotels, & more."
-        },
-        {
-            id : "zHKfHjk8EiY",
-            title : "New England Drone Tours",
-            description : "We fly small drones indoors creating seamless walkthrough videos for real estate, businesses, hotels, & more."
-        },
-        {
-            id : "zHKfHjk8EiY",
-            title : "New England Drone Tours",
-            description : "We fly small drones indoors creating seamless walkthrough videos for real estate, businesses, hotels, & more."
-        },
-        {
-            id : "zHKfHjk8EiY",
-            title : "New England Drone Tours",
-            description : "We fly small drones indoors creating seamless walkthrough videos for real estate, businesses, hotels, & more."
-        },
-        {
-            id : "zHKfHjk8EiY",
-            title : "New England Drone Tours",
-            description : "We fly small drones indoors creating seamless walkthrough videos for real estate, businesses, hotels, & more."
+            "en": {
+                id: "DqmoH9LV2Dw",
+                description: "A house of over 200 square meters in the middle of the forest. Drone real estate tours provide a better sense of space compared to traditional tours."
+            },
+            "fr": {
+                id: "DqmoH9LV2Dw",
+                description: "Une maison de plus de 200 mètres carrés en plein milieu de la forêt. Les visites immobilières par drone permettent de mieux comprendre l'espace par rapport aux visites traditionnelles."
+            }
         }
-    ]
+    ];
+
+    onMount(() => {
+        let lang = navigator.language.split("-")[0];
+        if (lang !== "fr" && lang !== "en") lang = "en";
+        videos = videos.map(q => q[lang]);
+    });
 
     const titleColor = "#fff";
     const titleShadowColor = "#000";
