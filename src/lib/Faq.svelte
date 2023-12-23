@@ -61,7 +61,37 @@
                 question: "Quel est le délai de préavis pour planifier mon vol ?",
                 answer: "Vous pouvez généralement planifier votre vol commercial dans un délai de 7 jours. Vous pouvez généralement planifier votre vol résidentiel dans un délai de 2 jours."
             }
-        }
+        },
+        {
+            "en": {
+                question: "How does a service proceed?",
+               answer: "During a service, the following steps are followed in order: discovery of the location, establishment of an initial video capture trajectory in accordance with your preferences, the first flight where you get a preview of the video during its duration, the completion of final flights until a satisfactory result is achieved. The drone has a flight autonomy of 40 minutes, distributed over 3 batteries, which is enough to redo the shots several times if necessary."
+            },
+            "fr": {
+                question: "Comment se déroule une prestation ?",
+                answer: "Lors d'une prestation s'enchaînent dans l’ordre : découverte des lieux, établissement d’une première trajectoire de capture vidéo en accord avec vous, premier vol où vous voyez un aperçu de la vidéo pendant sa durée, réalisation des vols finaux jusqu’à obtention d’un résultat jugé satisfaisant. Le drone a une autonomie de vol de 40 min, répartie sur 3 batteries, donc suffisamment pour refaire plusieurs fois les plans si besoin."
+            }
+        },
+        {
+            "en": {
+                question: "What are the rates?",
+               answer: "The rates are defined according to the duration of the service, the number of places to film and the complexity of the shots to be made. For a personalized quote, contact us. Indicative prices are available on the Services page."
+            },
+            "fr":{
+                question: "Quels sont les tarifs ?",
+               answer: "Les tarifs sont définis en fonction de la durée de la prestation, du nombre de lieux à filmer et de la complexité des plans à réaliser. Pour un devis personnalisé, contactez-nous. Des prix indicatifs sont disponibles sur la page Services."
+            },
+        },
+        {
+            "en": {
+                question: "Where are we located?",
+               answer: "We can perform services in the Paris region or around Toulouse. For services outside these areas, contact us. Travel expenses may apply."
+            },
+            "fr":{
+                question: "Où sommes nous situés ?",
+               answer: "Nous pouvons effectuer des prestations en région parisienne ou aux alentours de Toulouse. Pour des prestations en dehors de ces zones, contactez-nous. Des fras de déplacement peuvent s'appliquer."
+            },
+        },
     ];
 
     onMount(() => {
