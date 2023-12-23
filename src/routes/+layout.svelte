@@ -58,7 +58,7 @@
                 </li>
 
                 <li>
-                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/qa")}>{translate("faq")}</button>
+                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/faq")}>{translate("faq")}</button>
                 </li>
 
               </ul>
@@ -116,7 +116,7 @@
             </li>
 
             <li>
-                <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/qa")}>{translate("faq")}</button>
+                <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/faq")}>{translate("faq")}</button>
             </li>
         </ul>
     </nav>
