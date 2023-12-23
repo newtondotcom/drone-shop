@@ -2,6 +2,7 @@
     import { goto } from "$app/navigation";
     import Divider from "$lib/Divider.svelte";
     import Footer from "$lib/Footer.svelte";
+    import translate from '$lib/locales/function';
     import "../app.css";
 
     import "nprogress/nprogress.css";
@@ -32,7 +33,7 @@
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
-          <button class="block" >
+          <button class="block" on:click={()=>goto("/")} >
             <span class="sr-only">Home</span>
             <svg class="h-8" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -40,6 +41,7 @@
                 fill="currentColor"
               />
             </svg>
+          <div class="flex ml-4">{translate("header_company_name")}</div>
           </button>
         </div>
           {#if !menu}
@@ -47,20 +49,21 @@
             <nav aria-label="Global">
               <ul class="flex items-center gap-6 text-sm">
                 <li>
-                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/")}> Home </button>
+                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/")}>{translate("home")}</button>
                 </li>
-    
+
                 <li>
-                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/services")}> Services </button>
+                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/services")}>{translate("services")}</button>
                 </li>
-    
+
                 <li>
-                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/portfolio")}> Portfolio </button>
+                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/portfolio")}>{translate("portfolio")}</button>
                 </li>
-    
+
                 <li>
-                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/qa")}> FAQ </button>
+                  <button class="transition hover:text-gray-500/75" on:click={()=>goto("/qa")}>{translate("faq")}</button>
                 </li>
+
               </ul>
             </nav>
           </div>
@@ -101,26 +104,26 @@
     </div>
   
     {#if menu}
-      <nav aria-label="Global">
+    <nav aria-label="Global">
         <ul class=" w-full flex-col align-middle justify-center text-center items-center gap-6 text-lg mb-2">
-          <li>
-            <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/")}> Home </button>
-          </li>
-    
-          <li>
-            <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/services")}> Services </button>
-          </li>
-    
-          <li>
-            <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/portfolio")}> Portfolio </button>
-          </li>
-    
-          <li>
-            <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/qa")}> FAQ </button>
-          </li>
+            <li>
+                <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/")}>{translate('home')}</button>
+            </li>
+
+            <li>
+                <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/services")}>{translate("services")}</button>
+            </li>
+
+            <li>
+                <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/portfolio")}>{translate("portfolio")}</button>
+            </li>
+
+            <li>
+                <button class="transition py-2 hover:text-gray-500/75" on:click={()=>goMobile("/qa")}>{translate("faq")}</button>
+            </li>
         </ul>
-      </nav>
-    {/if}
+    </nav>
+    {/if} 
 
     <Divider />
   </header>
