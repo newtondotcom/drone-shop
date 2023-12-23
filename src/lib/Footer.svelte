@@ -34,7 +34,7 @@
           </li>
 
           <li>
-              <button class="text-gray-400 transition hover:text-gray-500/75" on:click={()=>goto("/qa")}>
+              <button class="text-gray-400 transition hover:text-gray-500/75" on:click={()=>goto("/faq")}>
                   {translate("faq")}
               </button>
           </li>
