@@ -55,7 +55,7 @@
             </p>
         </div>
 
-        <form on:submit={handleSubmit} autocomplete="off">
+        <form on:submit={handleSubmit} autocomplete="off" class="flex flex-col">
             <div class="flex align-middle self-center mt-4">
                 <label
                     for="UserName"
