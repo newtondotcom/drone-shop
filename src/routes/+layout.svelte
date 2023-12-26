@@ -36,7 +36,7 @@
           <button class="flex flex-row" on:click={()=>goto("/")} >
             <div class="flex">
             <span class="sr-only">Home</span>
-              <img class="h-8 w-auto sm:h-10" src="/favicon-1.png" alt="Logo" />
+              <img class="h-8 w-auto sm:h-10" src="/favicon-1-white.png" alt="Logo" />
             </div>
             <div class="flex ml-4 translate-y-1/2">{translate("header_company_name")}</div>
           </button>
@@ -73,7 +73,7 @@
                 on:click={()=>goto("/contact")}
                 class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
               >
-                Book now
+                {translate("contact_us")}
               </button>
             </div>
           </div>
