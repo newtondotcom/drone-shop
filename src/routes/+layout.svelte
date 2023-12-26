@@ -5,7 +5,7 @@
     import translate from '$lib/locales/function';
     import "../app.css";
 
-    import "nprogress/nprogress.css";
+    import "$lib/nprogress.css";
     import NProgress from "nprogress";
     import { navigating } from "$app/stores";
 
@@ -41,9 +41,9 @@
       <link rel="apple-touch-icon" href="/favicon-1-white.png" />
       <meta name="theme-color" content="#ffffff" />
     {:else}
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" href="/favicon-1.png" />
-      <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon-1.png" />
+    <meta name="theme-color" content="#000000" />
     {/if}
   </svelte:head>
   
