@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import translate from "./locales/function";
 
     let questions = [
         {
@@ -109,7 +110,7 @@
 			FAQ
 		</h2>
 		<p class="text-gray-300 text-xl mt-3">
-			Frequenty asked questions
+            {translate("faq_title")}
 		</p>
 	</div>
 	<div class="grid divide-y divide-neutral-200 text-gray-200 max-w-xl mx-auto mt-8">
