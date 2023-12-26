@@ -33,6 +33,7 @@ const translations = {
     "services_title" : "We fly drones indoors to create seamless video tours",
     "service_subtitle" : "The premier virtual tour for commercial real estate, businesses, hotels, apartment leasing, & more",
     "contact_us": "Book now",
+    "faq_title":"Frequenty Asked Questions"
   },
   "en": {
     "header_company_name": "New England Drone Tours",
@@ -41,10 +42,10 @@ const translations = {
     "portfolio": "Portfolio",
     "faq": "FAQ",
     "video_description": "Visites virtuelles en drone en intérieur",
-    "video_text": "Nous volons avec de petits drones à l'intérieur pour créer des vidéos de visite sans précédent pour l'immobilier, les entreprises, les hôtels, et bien plus encore.",
+    "video_text": "Nous volons en intérieur avec de petits drones pour créer des vidéos de visite sans précédent pour l'immobilier, les entreprises, les hôtels, et bien plus encore.",
     "get_started": "Commencez aujourd'hui",
     "who_we_are": "Qui sommes-nous",
-    "company_description": "New England Drone Tours est une entreprise de production vidéo à service complet basée à Boston, MA. Nous sommes spécialisés dans les vidéos de visite en drone pour l'immobilier, les entreprises, les hôtels, les bureaux, les lieux, et bien plus encore !",
+    "company_description": "New England Drone Tours est une entreprise de production vidéo basée en région parisienne. Nous sommes spécialisés dans les vidéos de visite en drone pour l'immobilier, les entreprises, les hôtels, les bureaux, les lieux, et bien plus encore !",
     "years_flying_drones": "Pilote de drone depuis plus de  5 ans",
     "liability_insurance": "Assurance responsabilité civile de 10 millions de dollars",
     "video_montage": "Montage vidéo et effets sonores",
@@ -65,9 +66,10 @@ const translations = {
     "sendButton": "Envoyer",
     "services_duration": "Minimum",
     "services_price" : "À partir de",
-    "services_title" : "Nous volons avec des drones à l'intérieur pour créer des visites vidéo sans précédent",
+    "services_title" : "Nous volons en l'intérieur avec des petits drones pour créer des visites virtuelles sans précédent",
     "service_subtitle" : "La visite virtuelle par excellence pour l'immobilier commercial, les entreprises, les hôtels, la location d'appartements, et bien plus encore",
     "contact_us": "Réserver maintenant",
+    "faq_title":"Questions Fréquemment Posées"
   },
 };
 
