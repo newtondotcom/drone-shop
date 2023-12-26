@@ -26,8 +26,26 @@
       goto(route);
     }
 
+    let darktheme = false;
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        darktheme = true;
+    }
+    console.log(darktheme);
+
 
   </script>
+
+  <svelte:head>
+    {#if darktheme}
+      <link rel="icon" href="/favicon-1-white.ico" />
+      <link rel="apple-touch-icon" href="/favicon-1-white.png" />
+      <meta name="theme-color" content="#ffffff" />
+    {:else}
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/favicon-1.png" />
+      <meta name="theme-color" content="#000000" />
+    {/if}
+  </svelte:head>
   
   <header class="bg-gray-800 text-white">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
