@@ -62,9 +62,9 @@
     class="lg:w-2/3 mx-auto opacity-70 lg:-translate-y-[100px]"
 >
 <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 lg:-translate-y-3/4 text-center text-white lg:h-40 lg:px-[20px] lg:py-[20px]">
-  <h2 class="text-7xl py-6 msm:text-lg">{translate("who_we_are")}</h2>
-  <h3 class="text-4xl py-4 msm:text-md">{translate("company_description")}</h3>
-  <ul class="self-center text-2xl msm:text-sm py-2">
+  <h2 class="text-6xl py-6 msm:text-lg">{translate("who_we_are")}</h2>
+  <h3 class="text-3xl py-4 msm:text-md">{translate("company_description")}</h3>
+  <ul class="self-center text-xl msm:text-sm py-2">
     <li>{translate("years_flying_drones")}</li>
     <li>{translate("liability_insurance")}</li>
     <li>{translate("video_montage")}</li>
