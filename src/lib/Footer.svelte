@@ -42,7 +42,7 @@
       <ul class="mt-12 flex justify-center gap-6 md:gap-8">
           <li>
               <a
-                  href="/"
+                  href="https://instagram.com/newton.creations"
                   rel="noreferrer"
                   target="_blank"
                   class="text-gray-400 transition hover:text-gray-500/75"
@@ -54,7 +54,7 @@
 
           <li>
               <a
-                  href="/"
+                  href="https://www.linkedin.com/in/robin-augereau/"
                   rel="noreferrer"
                   target="_blank"
                   class="text-gray-400 transition hover:text-gray-500/75"
@@ -66,7 +66,7 @@
 
           <li>
               <a
-                  href="/"
+                  href="https://github.com/newtondotcom"
                   rel="noreferrer"
                   target="_blank"
                   class="text-gray-400 transition hover:text-gray-500/75"
