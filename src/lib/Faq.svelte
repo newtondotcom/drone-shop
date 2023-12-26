@@ -93,6 +93,16 @@
                answer: "Nous pouvons effectuer des prestations en région parisienne ou aux alentours de Toulouse. Pour des prestations en dehors de ces zones, contactez-nous. Des fras de déplacement peuvent s'appliquer."
             },
         },
+        {
+            "en":{
+                question : " ",
+                answer : " "
+            },
+            "fr": {
+                question : "Pourquoi faire une vidéo et pas de simples photos ?",
+                answer : "De mon point de vue, ce qui rend le mieux, c’est de faire un plan séquence, c’est-à-dire de faire la visite de la maison en une prise, comme les vidéos disponibles sur mon site. Contrairement à de simples photos des différentes pièces prises par un photographe par exemple, le téléspectateur peut se rendre compte des volumes de la maison et de la disposition des pièces."
+            },
+        },
     ];
 
     onMount(() => {

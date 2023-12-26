@@ -41,7 +41,7 @@ const translations = {
     "services": "Services",
     "portfolio": "Portfolio",
     "faq": "FAQ",
-    "video_description": "Visites virtuelles en drone en intérieur",
+    "video_description": "Visites virtuelles de drone en intérieur",
     "video_text": "Nous volons en intérieur avec de petits drones pour créer des vidéos de visite sans précédent pour l'immobilier, les entreprises, les hôtels, et bien plus encore.",
     "get_started": "Commencez aujourd'hui",
     "who_we_are": "Qui sommes-nous",
