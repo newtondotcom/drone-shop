@@ -1,6 +1,6 @@
 const translations = {
-  "fr": {
-    "header_company_name": "New England Drone Tours",
+  "en": {
+    "header_company_name": "Droneception",
     "home": "Home",
     "services": "Services",
     "portfolio": "Portfolio",
@@ -10,12 +10,12 @@ const translations = {
     "get_started": "Get Started Today",
     "who_we_are": "Who We Are",
     "company_description": "New England Drone Tours is a full-service video production company based out of Boston, MA. We specialize in drone tour videos for real estate, businesses, hotels, offices, venues, and more!",
-    "years_flying_drones": "10+ Years flying Drones",
-    "liability_insurance": "$10 Million Liability Insurance",
+    "years_flying_drones": "5+ Years flying Drones",
+    "liability_insurance": "Professional Liability Insurance",
     "video_montage": "Video Montage and Sound FX",
     "showreel": "SHOWREEL",
     "footer_company_name": "New England Drone Tours",
-    "footer_description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.",
+    "footer_description": "Trust our little flying machines to get the best shots for your business.",
     "formSubmitted": "Your message has been successfully sent!",
     "responseMessage": "We will get back to you as soon as possible.",
     "contactUs": "Contact Us",
@@ -28,15 +28,16 @@ const translations = {
     "project": "Your Project",
     "projectPlaceholder": "Enter your message here",
     "sendButton": "Send",
-    "services_duration": "Last at least",
+    "services_duration": "On site for",
     "services_price" : "Starting from",
     "services_title" : "We fly drones indoors to create seamless video tours",
     "service_subtitle" : "The premier virtual tour for commercial real estate, businesses, hotels, apartment leasing, & more",
     "contact_us": "Book now",
-    "faq_title":"Frequenty Asked Questions"
+    "faq_title":"Frequenty Asked Questions",
+    "made_from" : "Made with ❤️ in Paris 🥐",
   },
-  "en": {
-    "header_company_name": "New England Drone Tours",
+  "fr": {
+    "header_company_name": "Droneception",
     "home": "Accueil",
     "services": "Services",
     "portfolio": "Portfolio",
@@ -47,7 +48,7 @@ const translations = {
     "who_we_are": "Qui sommes-nous",
     "company_description": "New England Drone Tours est une entreprise de production vidéo basée en région parisienne. Nous sommes spécialisés dans les vidéos de visite en drone pour l'immobilier, les entreprises, les hôtels, les bureaux, les lieux, et bien plus encore !",
     "years_flying_drones": "Pilote de drone depuis plus de  5 ans",
-    "liability_insurance": "Assurance responsabilité civile de 10 millions de dollars",
+    "liability_insurance": "Assurance responsabilité civile professionnelle",
     "video_montage": "Montage vidéo et effets sonores",
     "showreel": "PORTFOLIO",
     "footer_company_name": "New England Drone Tours",
@@ -69,7 +70,8 @@ const translations = {
     "services_title" : "Nous volons en l'intérieur avec des petits drones pour créer des visites virtuelles sans précédent",
     "service_subtitle" : "La visite virtuelle par excellence pour l'immobilier commercial, les entreprises, les hôtels, la location d'appartements, et bien plus encore",
     "contact_us": "Réserver maintenant",
-    "faq_title":"Questions Fréquemment Posées"
+    "faq_title":"Questions Fréquemment Posées",
+    "made_from" : "Fait avec ❤️ à Paris 🥐",
   },
 };
 
