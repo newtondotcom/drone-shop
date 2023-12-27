@@ -68,7 +68,7 @@
 
           <li>
               <a
-                  href="https://github.com/newtondotcom"
+                  href="https://github.com/newtondotcom/drone-shop.git"
                   rel="noreferrer"
                   target="_blank"
                   class="text-gray-400 transition hover:text-gray-500/75"
