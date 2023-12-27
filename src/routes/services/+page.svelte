@@ -6,105 +6,109 @@
 
   let services = [
   {
-      "fr": {
+      "en": {
           title: "Residential",
           description: "Sell your residential listings faster with Indoor Drone Tours!",
           img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
           price: "199",
-          duration: 90
+          duration: 60
       },
-      "en": {
+      "fr": {
           title: "Résidentiel",
           description: "Vendez vos annonces résidentielles plus rapidement avec les visites en drone intérieur !",
           img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
           price: "199",
-          duration: 90
+          duration: 60
       }
   },
   {
-      "fr": {
+      "en": {
           title: "Local Business",
           description: "Showcase your business with Indoor Drone Tours!",
-          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          img: "/local-business.jpeg",
           price: "199",
-          duration: 90
+          duration: 60
       },
-      "en": {
+      "fr": {
           title: "Entreprise Locale",
           description: "Mettez en valeur votre commerce avec une visite en drone intérieur !",
-          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          img: "/local-business.jpeg",
           price: "199",
-          duration: 90
+          duration: 60
       }
   },
   {
-      "fr": {
+      "en": {
           title: "Office",
           description: "Virtual Tours and Drone Video For Office Buildings",
-          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-          price: "199",
+          img: "/office.webp",
+          price: "399",
           duration: 90
       },
-      "en": {
+      "fr": {
           title: "Bureau",
           description: "Visites virtuelles et vidéos de drones pour les immeubles de bureaux",
-          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-          price: "199",
+          img: "/office.webp",
+          price: "399",
           duration: 90
       }
   },
   {
-      "fr": {
+      "en": {
           title: "Hostel",
           description: "Fly through your hotel and resort with Indoor Drone Tours",
-          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-          price: "199",
+          img: "/hotel.jpeg",
+          price: "399",
           duration: 90
       },
-      "en": {
+      "fr": {
           title: "Hôtels et hébergements locatifs",
           description: "Parcourez votre hôtel et votre complexe avec les visites en drone intérieur",
-          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-          price: "199",
+          img: "/hotel.jpeg",
+          price: "399",
           duration: 90
       }
   },
   {
-      "fr": {
-          title: "Construction",
-          description: "Capture your construction projects like never before with Indoor Drone Tours!",
-          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-          price: "199",
-          duration: 90
-      },
       "en": {
           title: "Construction",
+          description: "Capture your construction projects like never before with Indoor Drone Tours!",
+          img: "/construction.jpeg",
+          price: "299",
+          duration: 60
+      },
+      "fr": {
+          title: "Construction",
           description: "Capturez vos projets de construction comme jamais auparavant avec les visites en drone intérieur !",
-          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
-          price: "199",
-          duration: 90
+          img: "/construction.jpeg",
+          price: "299",
+          duration: 60
       }
   }
 ];
 
 onMount(() => {
         let lang = navigator.language.split("-")[0];
-        if (lang !== "en" && lang !== "fr") lang = "fr";
+        if (lang !== "fr" && lang !== "en") lang = "en";
         services = services.map(q => q[lang]);
 });
 
 </script>
 
+<svelte:head>
+  <title>Services | Droneception</title> 
+</svelte:head>
 
 <div class="max-w-screen-xl bg-gray-800 mx-auto px-5 min-h-screen pb-20">
     <Title title={translate("services_title")}
     subtitle={translate("service_subtitle")} />
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+
     {#each services as service}
     <button
     on:click={() => goto(`/contact`)} 
-    class="block rounded-lg p-4 shadow-sm shadow-indigo-100 bg-slate-200">
+    class="block rounded-lg p-4 shadow-sm shadow-indigo-100 bg-slate-200 msm:py-8">
         <img
           alt="Home"
           src="{service.img}"
@@ -114,7 +118,7 @@ onMount(() => {
         <div class="mt-2">
           <dl>
             <div>
-              <dt class="sr-only">Address</dt>
+              <dt class="sr-only">Duration</dt>
               <dd class="font-medium">{service.title}</dd>
             </div>
 
@@ -170,7 +174,7 @@ onMount(() => {
               <svg viewBox="0 0 24 24" class="w-6 text-indigo-500" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 7V12L14.5 10.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
               <div class="mt-1.5 sm:mt-0 msm:ml-2">
                 <p class="text-gray-500">{translate("services_duration")}</p>
-                <p class="font-medium">{service.duration} min</p>
+                <p class="font-medium">+ {service.duration} min</p>
               </div>
             </div>
       
