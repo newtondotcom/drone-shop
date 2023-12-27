@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>FAQ | NEDT</title> 
+  <title>FAQ | Droneception</title> 
 </svelte:head>
 
 <Faq />
