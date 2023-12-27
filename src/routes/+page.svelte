@@ -6,8 +6,8 @@
     import { goto } from "$app/navigation";
 
   const titleColor = "#fff";
-    const titleShadowColor = "#000";
-    const titleFontFamily = "Montserrat";
+  const titleShadowColor = "#000";
+  const titleFontFamily = "Montserrat";
 
 </script>
 
@@ -15,7 +15,7 @@
   <title>New England Drone Tour</title> 
 </svelte:head>
 
-<div class="lg:h-[250px] sm:h-[100px]">
+<div class="lg:h-[250px] msm:h-[150px]">
   <!-- svelte-ignore a11y-media-has-caption -->
   <video 
   src="/video.mp4" 
@@ -59,12 +59,12 @@
 <img 
     src="/avata.png"
     alt="test"
-    class="lg:w-2/3 mx-auto opacity-70 lg:-translate-y-[100px]"
+    class="lg:w-2/3 mx-auto opacity-70 lg:-translate-y-[100px] msm:-y-translate-1/3"
 >
-<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 lg:-translate-y-3/4 text-center text-white lg:h-40 lg:px-[20px] lg:py-[20px]">
-  <h2 class="text-6xl py-6 msm:text-lg">{translate("who_we_are")}</h2>
-  <h3 class="text-3xl py-4 msm:text-md">{translate("company_description")}</h3>
-  <ul class="self-center text-xl msm:text-sm py-2">
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 lg:-translate-y-3/4 msm:-translate-y-1/3 text-center text-white lg:h-40 lg:px-[20px] lg:py-[20px]">
+  <h2 class="text-6xl py-4 msm:text-xl">{translate("who_we_are")}</h2>
+  <h3 class="text-3xl py-2 msm:text-lg">{translate("company_description")}</h3>
+  <ul class="self-center text-xl msm:text-sm py-2 msm:opacity-50">
     <li>{translate("years_flying_drones")}</li>
     <li>{translate("liability_insurance")}</li>
     <li>{translate("video_montage")}</li>
@@ -75,6 +75,7 @@
 <!--
 <Testimonials />
 -->
+<div class="msm:h-20"></div>
 
 <Divider />
 
