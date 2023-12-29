@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-  <title>New England Drone Tour</title> 
+  <title>Droneception</title> 
 </svelte:head>
 
 <div class="lg:h-[250px] msm:h-[150px]">
