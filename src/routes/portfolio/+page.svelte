@@ -38,7 +38,7 @@
 </script>
 
 <svelte:head>
-  <title>Portfolio | Droninside</title> 
+  <title>Portfolio | DronInside</title> 
 </svelte:head>
 
 <div class="min-h-screen bg-gray-800">

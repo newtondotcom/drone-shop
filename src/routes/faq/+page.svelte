@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>FAQ | Droninside</title> 
+  <title>FAQ | DronInside</title> 
 </svelte:head>
 
 <Faq />

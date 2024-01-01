@@ -29,7 +29,7 @@
 </script>
 
 <svelte:head>
-  <title>Contact | Droninside</title> 
+  <title>Contact | DronInside</title> 
 </svelte:head>
 
 <div class="flex flex-col justify-center align-middle min-h-screen">
