@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-  <title>Droneception</title> 
+  <title>Droninside</title> 
 </svelte:head>
 
 <div class="lg:h-[250px] msm:h-[150px]">

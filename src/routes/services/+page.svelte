@@ -96,7 +96,7 @@ onMount(() => {
 </script>
 
 <svelte:head>
-  <title>Services | Droneception</title> 
+  <title>Services | Droninside</title> 
 </svelte:head>
 
 <div class="max-w-screen-xl bg-gray-800 mx-auto px-5 min-h-screen pb-20">

@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>FAQ | Droneception</title> 
+  <title>FAQ | Droninside</title> 
 </svelte:head>
 
 <Faq />
