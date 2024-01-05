@@ -11,7 +11,8 @@
 
     async function handleSubmit(event: { preventDefault: () => void; }) {
       event.preventDefault();
-      await sendToDiscordWebhook(message,email,name);
+      console.log(name, email, message, phone);
+      await sendToDiscordWebhook(message,email,name,phone);
       clearForm();
       isSubmitted = true;
       setTimeout(() => {
@@ -67,6 +68,7 @@
                         id="UserName"
                         placeholder={translate("fullNamePlaceholder")}
                         class="mt-1 w-full bg-slate-200 border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                        bind:value={name}
                     />
                 </label>
             </div>
@@ -82,6 +84,7 @@
                         id="UserEmail"
                         placeholder={translate("emailPlaceholder")}
                         class="mt-1 w-full bg-slate-200 border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                        bind:value={email}
                     />
                 </label>
             </div>
@@ -97,6 +100,7 @@
                         id="UserPhone"
                         placeholder={translate("phonePlaceholder")}
                         class="mt-1 w-full bg-slate-200 border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
+                        bind:value={phone}
                     />
                 </label>
             </div>
@@ -111,6 +115,7 @@
                         id="UserProject"
                         placeholder={translate("projectPlaceholder")}
                         class="mt-1 w-full bg-slate-200 border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm resize-y"
+                        bind:value={message}
                     ></textarea>
                 </label>
             </div>
