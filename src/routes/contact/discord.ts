@@ -10,7 +10,7 @@ export async function sendToDiscordWebhook(message : string ,email: string,names
           embeds: [
             {
               color: Constants.color,
-              title: "Nouveau message de "+names,
+              title: "@everyone Nouveau message de "+names,
               description: "Contact : "+email,
             },
           ],
