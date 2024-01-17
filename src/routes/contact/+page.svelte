@@ -31,7 +31,7 @@
   <title>Contanct | NEDT</title> 
 </svelte:head>
 
-<div class="flex flex-col justify-center align-middle min-h-screen ">
+<div class="flex flex-col justify-center align-middle min-h-screen w-full">
 
     {#if isSubmitted}
         <div class="flex flex-col align-middle self-center pt-8 pb-4 -mt-20">
@@ -54,7 +54,7 @@
             </p>
         </div>
 
-        <form on:submit={handleSubmit} autocomplete="off">
+        <form on:submit={handleSubmit} autocomplete="off" class="flex flex-col justify-center align-middle w-full">
         <div class="flex align-middle self-center mt-4">
             <label
                 for="UserName"
@@ -98,6 +98,18 @@
                     class="mt-1 w-full bg-slate-200 border-none p-0 focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
                 />
             </label>
+        </div>
+
+        <div class="flex mt-4 self-center">
+            <select id="countries" class="  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>Choose a service</option>
+                <option value="US">Residential</option>
+                <option value="CA">Local Business</option>
+                <option value="FR">Office</option>
+                <option value="DE">Hostel</option>
+                <option value="it">Construction</option>
+                <option value="es">Industrial</option>
+            </select>
         </div>
 
         <div class="flex align-middle self-center mt-4">
