@@ -6,13 +6,19 @@
     let email = "";
     let message = "";
     let phone = "";
+    let project = "";
 
     let isSubmitted = false;
 
     async function handleSubmit(event: { preventDefault: () => void; }) {
       event.preventDefault();
       console.log(name, email, message, phone);
-      await sendToDiscordWebhook(message,email,name,phone);
+      if (document.getElementById("projects")){
+        project = document.getElementById("projects").value;
+      } else {
+        project = "No project selected";
+    }   
+      await sendToDiscordWebhook(message,email,name,phone,project);
       clearForm();
       isSubmitted = true;
       setTimeout(() => {
@@ -103,6 +109,18 @@
                         bind:value={phone}
                     />
                 </label>
+            </div>
+
+            <div class="flex mt-4 self-center">
+                <select id="projects" class="  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    <option selected>Choose a service</option>
+                    <option value="US">Residential</option>
+                    <option value="CA">Local Business</option>
+                    <option value="FR">Office</option>
+                    <option value="DE">Hostel</option>
+                    <option value="it">Construction</option>
+                    <option value="es">Industrial</option>
+                </select>
             </div>
 
             <div class="flex align-middle self-center mt-4">
