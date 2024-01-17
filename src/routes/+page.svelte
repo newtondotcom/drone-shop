@@ -47,6 +47,8 @@
     </div>
 </section>
 
+<Divider />
+
 <div class="relative py-0 lg:h-[1000px]">
   <img 
       src="/avata.png"
