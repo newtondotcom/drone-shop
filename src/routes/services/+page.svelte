@@ -8,15 +8,15 @@
   {
       "en": {
           title: "Residential",
-          description: "Sell your residential listings faster with Indoor Drone Tours!",
-          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          description: "Sell your residential listings faster with DroneInside!",
+          img: "/res.avif",
           price: "199",
           duration: 60
       },
       "fr": {
           title: "Résidentiel",
           description: "Vendez vos annonces résidentielles plus rapidement avec les visites en drone intérieur !",
-          img: "https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
+          img: "/res.avif",
           price: "199",
           duration: 60
       }
@@ -24,7 +24,7 @@
   {
       "en": {
           title: "Local Business",
-          description: "Showcase your business with Indoor Drone Tours!",
+          description: "Showcase your business with DroneInside!",
           img: "/local-business.jpeg",
           price: "199",
           duration: 60
@@ -56,7 +56,7 @@
   {
       "en": {
           title: "Hostel",
-          description: "Fly through your hotel and resort with Indoor Drone Tours",
+          description: "Fly through your hotel and resort with DroneInside",
           img: "/hotel.jpeg",
           price: "399",
           duration: 90
@@ -72,7 +72,7 @@
   {
       "en": {
           title: "Construction",
-          description: "Capture your construction projects like never before with Indoor Drone Tours!",
+          description: "Capture your construction projects like never before with DroneInside!",
           img: "/construction.jpeg",
           price: "299",
           duration: 60
