@@ -4,6 +4,7 @@
     import Footer from "$lib/Footer.svelte";
     import translate from '$lib/locales/function';
     import "../app.css";
+    import { page } from "$app/stores";
 
     import "$lib/nprogress.css";
     import NProgress from "nprogress";
@@ -45,6 +46,7 @@
     {/if}
   </svelte:head>
   
+  {#if $page.url.pathname !==  "/logo"}
   <header class="bg-gray-800 text-white">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
@@ -141,6 +143,8 @@
     <Divider />
   </header>
 
+  {/if}
+
 
   
 <main class="bg-gray-800">
@@ -148,5 +152,6 @@
 </main>
 
 
-
+{#if $page.url.pathname !==  "/logo"}
 <Footer />
+{/if}
