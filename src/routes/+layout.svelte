@@ -54,9 +54,8 @@
           <button class="flex flex-row" on:click={()=>goto("/")} >
             <div class="flex">
             <span class="sr-only">Home</span>
-              <img class="h-8 w-auto sm:h-10" src="/favicon-1-white.png" alt="Logo" />
+              <img class="h-8 w-auto sm:h-10" src="/logo.png" alt="Logo" />
             </div>
-            <div class="flex ml-4 translate-y-1/2 msm:translate-y-1/4">{translate("header_company_name")}</div>
           </button>
         </div>
           {#if !menu}

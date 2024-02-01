@@ -5,8 +5,8 @@
 
 <footer class="flex bg-gray-800">
   <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-      <div class="flex justify-center text-teal-600"><img class="h-14 w-auto sm:h-10" src="/favicon-1-white.png" alt="Logo" />
-          <div class="flex ml-4 translate-y-1/4">{translate("header_company_name")}</div>
+      <div class="flex justify-center text-teal-600">
+        <img class="h-8 w-auto sm:h-10" src="/logo.png" alt="Logo" />
       </div>
 
       <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
