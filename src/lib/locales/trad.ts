@@ -35,6 +35,13 @@ const translations = {
     "contact_us": "Book now",
     "faq_title":"Frequenty Asked Questions",
     "made_from" : "Made with ❤️ in Paris 🥐",
+    "residential": "Residential",
+    "local_business": "Local Business",
+    "office": "Office",
+    "hostel": "Hostel",
+    "construction": "Construction",
+    "industrial": "Industrial",
+    "choose_service": "Choose a service",
   },
   "fr": {
     "header_company_name": "DronInside",
@@ -72,6 +79,13 @@ const translations = {
     "contact_us": "Réserver maintenant",
     "faq_title":"Questions Fréquemment Posées",
     "made_from" : "Fait avec ❤️ à Paris 🥐",
+    "residential": "Résidentiels",
+    "local_business": "Petits commerces",
+    "office": "Entreprises",
+    "hostel": "Hôtels",
+    "construction": "Sites de construction",
+    "industrial": "Industriels",
+    "choose_service": "Choisissez un service",
   },
 };
 
