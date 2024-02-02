@@ -3,17 +3,47 @@
   import Footer from '$lib/Footer.svelte';
   import Divider from '$lib/Divider.svelte';
   import translate from '$lib/locales/function';
-    import { goto } from "$app/navigation";
+  import { goto } from "$app/navigation";
+  import Modal from "$lib/Modal.svelte";
 
   const titleColor = "#fff";
   const titleShadowColor = "#000";
   const titleFontFamily = "Montserrat";
 
+  let loading = true;
+  function toogleLoading () {
+    loading = !loading;
+  }
+
+  let phase: "propellers" | "battery" | "camera" | "takeoff";
+
+  let videoElement: HTMLElement | null;
+  let loadedProportion = 0;
+
+  function handleVideoLoaded() {
+    loading = false;
+  }
+  
 </script>
 
 <svelte:head>
   <title>DronInside</title> 
 </svelte:head>
+
+<Modal
+title="Voici le code de ta partie 👋"
+open={loading}
+on:close={() => toogleLoading}
+>
+<svelte:fragment slot="body">
+  Partage le code avec tes amis pour qu'ils puissent rejoindre ta partie !
+  <div class="relative flex justify-center flex-box">    
+    <div>
+
+  </div>
+  </div>
+</svelte:fragment>
+</Modal>
 
 <div class="lg:h-[250px] msm:h-[150px]">
   <!-- svelte-ignore a11y-media-has-caption -->
@@ -21,6 +51,8 @@
   src="/video.mp4" 
   autoplay 
   loop
+  on:loadeddata={handleVideoLoaded}
+  id="video"
   class="w-full h-full object-cover">
 </div>
 
@@ -29,6 +61,7 @@
     <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
       <h2 class="text-2xl font-bold text-gray-100 md:text-3xl">
           {translate("video_description")}
+          <p>The current loaded proportion is: {loadedProportion.toFixed(2)}%</p>
       </h2>
 
       <p class="hidden text-gray-200 md:mt-4 md:block">
