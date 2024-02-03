@@ -11,39 +11,25 @@
   const titleFontFamily = "Montserrat";
 
   let loading = true;
-  function toogleLoading () {
+
+  function toggleLoading() {
     loading = !loading;
   }
-
-  let phase: "propellers" | "battery" | "camera" | "takeoff";
-
-  let videoElement: HTMLElement | null;
-  let loadedProportion = 0;
-
-  function handleVideoLoaded() {
-    loading = false;
-  }
   
+  function handleVideoLoaded(event: Event & { currentTarget: EventTarget & HTMLVideoElement; }) {
+    toggleLoading();
+  }
 </script>
+
 
 <svelte:head>
   <title>DronInside</title> 
 </svelte:head>
 
 <Modal
-title="Voici le code de ta partie 👋"
 open={loading}
-on:close={() => toogleLoading}
->
-<svelte:fragment slot="body">
-  Partage le code avec tes amis pour qu'ils puissent rejoindre ta partie !
-  <div class="relative flex justify-center flex-box">    
-    <div>
-
-  </div>
-  </div>
-</svelte:fragment>
-</Modal>
+bind:loading
+/>
 
 <div class="lg:h-[250px] msm:h-[150px]">
   <!-- svelte-ignore a11y-media-has-caption -->
@@ -61,7 +47,6 @@ on:close={() => toogleLoading}
     <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
       <h2 class="text-2xl font-bold text-gray-100 md:text-3xl">
           {translate("video_description")}
-          <p>The current loaded proportion is: {loadedProportion.toFixed(2)}%</p>
       </h2>
 
       <p class="hidden text-gray-200 md:mt-4 md:block">
