@@ -90,6 +90,10 @@ const translations = {
     "construction": "Sites de construction",
     "industrial": "Industriels",
     "choose_service": "Choisissez un service",
+    "loading_propellers": "On vous visse les hélices",
+    "loading_battery": "On branche la batterie",
+    "loading_camera": "On allume la caméra",
+    "loading_takeoff": "Et on se prépare au décollage",
   },
 };
 
