@@ -42,6 +42,10 @@ const translations = {
     "construction": "Construction",
     "industrial": "Industrial",
     "choose_service": "Choose a service",
+    "loading_propellers": "Screwing propellers",
+    "loading_battery": "Plug in the battery",
+    "loading_camera": "Turning on the camera",
+    "loading_takeoff": "Getting ready for take-off",
   },
   "fr": {
     "header_company_name": "DronInside",
