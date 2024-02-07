@@ -1,6 +1,5 @@
 <script lang="ts">
   import Youtube from "svelte-youtube-embed";
-  import Footer from '$lib/Footer.svelte';
   import Divider from '$lib/Divider.svelte';
   import translate from '$lib/locales/function';
   import { goto } from "$app/navigation";

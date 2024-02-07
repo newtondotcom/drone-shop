@@ -1,3 +1,47 @@
+<script lang="ts">
+  import translate from "$lib/locales/function";
+  
+  export let open = false;
+  export let loading: boolean;
+  
+  let title: string = translate("loading_propellers") as string;
+  let phase: "propellers" | "battery" | "camera" | "takeoff" = "propellers";
+  
+  let intervalLoadingAnimation = 1000;
+  
+  function handleVideoLoaded() {
+      if (loading) {
+        switch (phase) {
+          case "propellers":
+            phase = "battery";
+            title = translate("loading_battery") as string;
+            setTimeout(handleVideoLoaded, intervalLoadingAnimation);
+            break;
+          case "battery":
+            phase = "camera";
+            title = translate("loading_camera") as string;
+            setTimeout(handleVideoLoaded, intervalLoadingAnimation);
+            break;
+          case "camera":
+            phase = "takeoff";
+            title = translate("loading_takeoff") as string;
+            setTimeout(handleVideoLoaded, intervalLoadingAnimation);
+            break;
+          case "takeoff":
+            phase = "propellers";
+            title = translate("loading_propellers")
+            setTimeout(handleVideoLoaded, intervalLoadingAnimation);
+            break;
+          default:
+            break;
+        }
+      }
+  }
+  
+  handleVideoLoaded();
+  
+</script>
+
 {#if open}
 <div class="modal z-50 fixed w-full h-full top-0 left-0 flex items-center justify-center p-8 lg:p-0">
   <div class="modal-overlay fixed w-full h-full bg-gray-900 opacity-50"></div>
@@ -24,50 +68,6 @@
   </div>
 </div>
 {/if}
-
-<script lang="ts">
-import translate from "$lib/locales/function";
-
-export let open = false;
-export let loading: boolean;
-
-let title: string = translate("loading_propellers") as string;
-let phase: "propellers" | "battery" | "camera" | "takeoff" = "propellers";
-
-let intervalLoadingAnimation = 1000;
-
-function handleVideoLoaded() {
-    if (loading) {
-      switch (phase) {
-        case "propellers":
-          phase = "battery";
-          title = translate("loading_battery") as string;
-          setTimeout(handleVideoLoaded, intervalLoadingAnimation);
-          break;
-        case "battery":
-          phase = "camera";
-          title = translate("loading_camera") as string;
-          setTimeout(handleVideoLoaded, intervalLoadingAnimation);
-          break;
-        case "camera":
-          phase = "takeoff";
-          title = translate("loading_takeoff") as string;
-          setTimeout(handleVideoLoaded, intervalLoadingAnimation);
-          break;
-        case "takeoff":
-          phase = "propellers";
-          title = translate("loading_propellers")
-          setTimeout(handleVideoLoaded, intervalLoadingAnimation);
-          break;
-        default:
-          break;
-      }
-    }
-}
-
-handleVideoLoaded();
-
-</script>
 
 <style>
   .dot-container {
