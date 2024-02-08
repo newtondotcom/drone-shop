@@ -30,7 +30,7 @@ open={loading}
 bind:loading
 />
 
-<div class="lg:h-[250px] msm:h-[150px]">
+<div class="lg:h-[250px] msm:hidden">
   <!-- svelte-ignore a11y-media-has-caption -->
   <video 
   src="/video.mp4" 
@@ -38,7 +38,13 @@ bind:loading
   loop
   on:loadeddata={handleVideoLoaded}
   id="video"
-  class="w-full h-full object-cover">
+  class="w-full h-full object-cover" />
+</div>
+<div class="lg:hidden msm:h-[150px]">
+  <img 
+  src="/mobile.png"
+  alt="header"
+  class="w-full h-full object-cover"/>
 </div>
 
 <section class="overflow-hidden flex flex-row align-middle justify-center bg-gray-800 sm:grid sm:grid-cols-2">
