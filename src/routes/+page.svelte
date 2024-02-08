@@ -4,12 +4,14 @@
   import translate from '$lib/locales/function';
   import { goto } from "$app/navigation";
   import Modal from "$lib/Modal.svelte";
+  import { onMount } from "svelte";
 
   const titleColor = "#fff";
   const titleShadowColor = "#000";
   const titleFontFamily = "Montserrat";
 
   let loading = true;
+  let mobile = false;
 
   function toggleLoading() {
     loading = !loading;
@@ -18,6 +20,13 @@
   function handleVideoLoaded(event: Event & { currentTarget: EventTarget & HTMLVideoElement; }) {
     toggleLoading();
   }
+
+  onMount(() => {
+    const width = window.innerWidth;
+    if (width < 640) {
+      mobile = true;
+    }
+  });
 </script>
 
 
@@ -30,6 +39,7 @@ open={loading}
 bind:loading
 />
 
+{#if !mobile}
 <div class="lg:h-[250px] msm:hidden">
   <!-- svelte-ignore a11y-media-has-caption -->
   <video 
@@ -40,12 +50,14 @@ bind:loading
   id="video"
   class="w-full h-full object-cover" />
 </div>
+{:else}
 <div class="lg:hidden msm:h-[150px]">
   <img 
   src="/mobile.png"
   alt="header"
   class="w-full h-full object-cover"/>
 </div>
+{/if}
 
 <section class="overflow-hidden flex flex-row align-middle justify-center bg-gray-800 sm:grid sm:grid-cols-2">
   <div class="p-8 md:p-12 lg:px-16 lg:py-24">
