@@ -36,12 +36,12 @@
 
   <svelte:head>
     {#if darktheme}
-      <link rel="icon" href="/favicon-1-white.ico" />
-      <link rel="apple-touch-icon" href="/favicon-1-white.png" />
+      <link rel="icon" href="/icons/favicon-white.ico" />
+      <link rel="apple-touch-icon" href="/favicon-white.png" />
       <meta name="theme-color" content="#ffffff" />
     {:else}
     <link rel="icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" href="/favicon-1.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
     <meta name="theme-color" content="#000000" />
     {/if}
   </svelte:head>
