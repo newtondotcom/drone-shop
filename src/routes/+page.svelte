@@ -10,7 +10,7 @@
   const titleShadowColor = "#000";
   const titleFontFamily = "Montserrat";
 
-  let loading = true;
+  let loading = false;
   let mobile = false;
 
   function toggleLoading() {
@@ -40,8 +40,9 @@ bind:loading
 />
 
 {#if !mobile}
-<div class="lg:h-[250px] msm:hidden">
+<div class="msm:hidden">
   <!-- svelte-ignore a11y-media-has-caption -->
+  <!-- 
   <video 
   src="/video.mp4" 
   autoplay 
@@ -49,6 +50,11 @@ bind:loading
   on:loadeddata={handleVideoLoaded}
   id="video"
   class="w-full h-full object-cover" />
+-->
+<img src="/cover.png"
+class="w-full h-full object-cover"
+alt = "cover"
+/>
 </div>
 {:else}
 <div class="lg:hidden msm:h-[150px]">
