@@ -40,7 +40,7 @@
       <link rel="apple-touch-icon" href="/icons/favicon-white.png" />
       <meta name="theme-color" content="#ffffff" />
     {:else}
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/icons/favicon.ico" />
     <link rel="apple-touch-icon" href="/icons/favicon.png" />
     <meta name="theme-color" content="#000000" />
     {/if}
