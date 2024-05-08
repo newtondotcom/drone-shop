@@ -109,7 +109,9 @@ alt = "cover"
   <h3 class="text-3xl py-2 msm:text-lg">{translate("company_description")}</h3>
   <ul class="self-center text-xl msm:text-sm py-2 msm:opacity-50">
     <li>{translate("years_flying_drones")}</li>
+    <!--
     <li>{translate("liability_insurance")}</li>
+    -->
     <li>{translate("video_montage")}</li>
   </ul>
 </div>
