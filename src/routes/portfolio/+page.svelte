@@ -22,6 +22,16 @@
                 id: "DqmoH9LV2Dw",
                 description: "Une maison de plus de 200 mètres carrés en plein milieu de la forêt. Les visites immobilières par drone permettent de mieux comprendre l'espace par rapport aux visites traditionnelles."
             }
+        },
+        {
+            "en": {
+                id: "A0knQ9E67bc",
+                description: "Discover the beauty of the South of France with this video."
+            },
+            "fr": {
+                id: "A0knQ9E67bc",
+                description: "Découvrez la beauté du Sud de la France avec cette vidéo."
+            }
         }
     ];
 
