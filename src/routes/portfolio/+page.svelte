@@ -26,7 +26,7 @@
         {
             "en": {
                 id: "A0knQ9E67bc",
-                description: "Discover the beauty of the South of France with this video."
+                description: "Discover the beauty of the Southern France with this video."
             },
             "fr": {
                 id: "A0knQ9E67bc",
