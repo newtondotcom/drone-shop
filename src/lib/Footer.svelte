@@ -44,7 +44,7 @@
       <ul class="mt-12 flex justify-center gap-6 md:gap-8">
           <li>
               <a
-                  href="https://instagram.com/newton.creations"
+                  href="https://instagram.com/droninside"
                   rel="noreferrer"
                   target="_blank"
                   class="text-gray-400 transition hover:text-gray-500/75"
