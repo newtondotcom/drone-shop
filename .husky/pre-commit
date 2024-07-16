@@ -1,1 +1,1 @@
-bun pretty-quick
+bun pretty-quick --staged
