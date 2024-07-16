@@ -4,93 +4,89 @@
     import translate from "$lib/locales/function";
     import { onMount } from "svelte";
 
-  let services = [
+    let services = [
   {
-      "en": {
-          title: "Residential",
-          description: "Sell your residential listings faster with DroneInside!",
-          img: "/res.avif",
-          price: "199",
-          duration: 60
-      },
-      "fr": {
-          title: "Résidentiel",
-          description: "Vendez vos annonces résidentielles plus rapidement avec les visites en drone intérieur !",
-          img: "/res.avif",
-          price: "199",
-          duration: 60
-      }
+    key: "residential",
+    en: {
+      title: "Residential",
+      description: "Sell your residential listings faster with DroneInside!",
+    },
+    fr: {
+      title: "Lieux résidentiels",
+      description: "Profitez d'un avantage concurrentiel pour vendre vos annonces résidentielles plus rapidement !",
+    },
+    price: 199,
+    duration: 60,
+    img: "/res.avif",
   },
   {
-      "en": {
-          title: "Local Business",
-          description: "Showcase your business with DroneInside!",
-          img: "/local-business.jpeg",
-          price: "199",
-          duration: 60
-      },
-      "fr": {
-          title: "Entreprise Locale",
-          description: "Mettez en valeur votre commerce avec une visite en drone intérieur !",
-          img: "/local-business.jpeg",
-          price: "199",
-          duration: 60
-      }
+    key: "local-business",
+    en: {
+      title: "Local Business",
+      description: "Showcase your business with DroneInside!",
+    },
+    fr: {
+      title: "Entreprises Locales",
+      description: "Mettez en valeur votre commerce avec une vidéo à destination des réseaux sociaux !",
+    },
+    price: 199,
+    duration: 60,
+    img: "/local-business.jpeg",
   },
   {
-      "en": {
-          title: "Office",
-          description: "Virtual Tours and Drone Video For Office Buildings",
-          img: "/office.webp",
-          price: "399",
-          duration: 90
-      },
-      "fr": {
-          title: "Bureau",
-          description: "Visites virtuelles et vidéos de drones pour les immeubles de bureaux",
-          img: "/office.webp",
-          price: "399",
-          duration: 90
-      }
+    key: "office",
+    en: {
+      title: "Office",
+      description: "Virtual Tours and Drone Video For Office Buildings",
+    },
+    fr: {
+      title: "Bureaux",
+      description: "Faites la promotion de vos espaces de travail / coworking  avec une vidéo sur mesure !",
+    },
+    price: 399,
+    duration: 90,
+    img: "/office.webp",
   },
   {
-      "en": {
-          title: "Hostel",
-          description: "Fly through your hotel and resort with DroneInside",
-          img: "/hotel.jpeg",
-          price: "399",
-          duration: 90
-      },
-      "fr": {
-          title: "Hôtels et hébergements locatifs",
-          description: "Parcourez votre hôtel et votre complexe avec les visites en drone intérieur",
-          img: "/hotel.jpeg",
-          price: "399",
-          duration: 90
-      }
+    key: "hostel",
+    en: {
+      title: "Hostel",
+      description: "Fly through your hotel and resort with DroneInside",
+    },
+    fr: {
+      title: "Hôtels et hébergements locatifs",
+      description: "Faites découvrir votre complexe hôtellier à travers une vidéo immersive !",
+    },
+    price: 399,
+    duration: 90,
+    img: "/hotel.jpeg",
   },
   {
-      "en": {
-          title: "Construction",
-          description: "Capture your construction projects like never before with DroneInside!",
-          img: "/construction.jpeg",
-          price: "299",
-          duration: 60
-      },
-      "fr": {
-          title: "Construction",
-          description: "Capturez vos projets de construction comme jamais auparavant avec les visites en drone intérieur !",
-          img: "/construction.jpeg",
-          price: "299",
-          duration: 60
-      }
-  }
+    key: "construction",
+    en: {
+      title: "Construction",
+      description: "Capture your construction projects like never before with DroneInside!",
+    },
+    fr: {
+      title: "Site de constructions",
+      description: "Capturez et partagez l'avancement de vos projets de construction comme jamais auparavant !",
+    },
+    price: 299,
+    duration: 60,
+    img: "/construction.jpeg",
+  },
 ];
+
 
 onMount(() => {
         let lang = navigator.language.split("-")[0];
         if (lang !== "fr" && lang !== "en") lang = "en";
-        services = services.map(q => q[lang]);
+        services = services.map((service) => ({
+        ...service[lang],
+        price: service.price,
+        duration: service.duration,
+        img: service.img,
+      }));
 });
 
 </script>

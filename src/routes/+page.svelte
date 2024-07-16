@@ -88,7 +88,7 @@ alt = "cover"
   </div>
   <div class="flex flex-col align-middle self-center msm:hidden">
     <img
-      alt="Student"
+      alt="Drone"
       src="/camera.gif"
       height="auto"
       class="flex w-full object-cover lg:scale-75"
@@ -126,7 +126,8 @@ alt = "cover"
 
 <div class="flex flex-col text-white lg:w-4/5 mx-auto py-4 msm:px-4">
     <div class="flex self-center my-8 text-5xl">SHOWREEL</div>
-    <Youtube id="TTYi8xfwReI"
+    <Youtube 
+    id="TTYi8xfwReI"
     --title-color={titleColor}
     --title-shadow-color="{titleShadowColor}100"
     --title-font-family={titleFontFamily}
