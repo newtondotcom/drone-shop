@@ -1,38 +1,16 @@
-# create-svelte
+# Drone Portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+This is my Svelte made drone portfolio. I am Robin Augereau, a French drone pilot and videographer. Specializing in indoor cinematography, I can also capture outdoor cinematic shots. Feel free to contact me for more informations :
 
-## Creating a project
+- [Instagram](https://www.instagram.com/dronside/)
+- [LinkedIn](https://www.linkedin.com/in/robin-augereau/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## How to run it
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Install the few dependencies:
+`npm i` or `bun i`
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Run the project:
+`npm run dev` or `bun dev`
+To build the project:
+`npm run build` or `bun build`
