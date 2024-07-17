@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { sendToDiscordWebhook } from './discord';
 	import translate from '$lib/locales/function';
+	import { goto } from '$app/navigation';
 
 	let name = '';
 	let email = '';
@@ -12,17 +13,12 @@
 
 	async function handleSubmit(event: { preventDefault: () => void }) {
 		event.preventDefault();
-		console.log(name, email, message, phone);
-		if (document.getElementById('projects')) {
-			project = document.getElementById('projects').value;
-		} else {
-			project = 'No project selected';
-		}
 		await sendToDiscordWebhook(message, email, name, phone, project);
 		clearForm();
 		isSubmitted = true;
 		setTimeout(() => {
 			isSubmitted = false;
+			goto('/');
 		}, 5000);
 	}
 
@@ -112,15 +108,16 @@
 			<div class="mt-4 flex self-center">
 				<select
 					id="projects"
-					class="  block rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+					bind:value={project}
+					class="block rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
 				>
 					<option selected>{translate('choose_service')}</option>
-					<option value="US">{translate('residential')}</option>
-					<option value="CA">{translate('local_business')}</option>
-					<option value="FR">{translate('office')}</option>
-					<option value="DE">{translate('hostel')}</option>
-					<option value="it">{translate('construction')}</option>
-					<option value="es">{translate('industrial')}</option>
+					<option value="residential">{translate('residential')}</option>
+					<option value="local_business">{translate('local_business')}</option>
+					<option value="office">{translate('office')}</option>
+					<option value="hostel">{translate('hostel')}</option>
+					<option value="construction">{translate('construction')}</option>
+					<option value="industrial">{translate('industrial')}</option>
 				</select>
 			</div>
 
