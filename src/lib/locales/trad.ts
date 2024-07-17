@@ -9,9 +9,9 @@ const translations = {
 		video_text:
 			'We fly small drones indoors creating seamless walkthrough videos for real estate, businesses, hotels, & more.',
 		get_started: 'Get Started Today',
-		who_we_are: 'Who We Are',
+		who_we_are: 'Who We Are ?',
 		company_description:
-			'DronInside is a video production company based in the Parisian region. We specialize in drone video tours for real estate, businesses, hotels, offices, venues, and much more!',
+			' is a video production company based in the Parisian region. We specialize in drone video tours for real estate, businesses, hotels, offices, venues, and much more!',
 		years_flying_drones: '5+ Years flying Drones',
 		liability_insurance: 'Professional Liability Insurance',
 		video_montage: 'Video Montage and Sound FX',
@@ -61,9 +61,9 @@ const translations = {
 		video_text:
 			"Nous volons en intérieur avec de petits drones pour créer une visite virtuelle vidéo sans précédent pour l'immobilier, les entreprises, les hôtels, et bien plus encore.",
 		get_started: "Commencez aujourd'hui",
-		who_we_are: 'Qui sommes-nous',
+		who_we_are: 'Qui sommes-nous ?',
 		company_description:
-			"DronInside est une entreprise de production vidéo basée en région parisienne. Nous sommes spécialisés dans les vidéos de visite en drone pour l'immobilier, les entreprises, les hôtels, les bureaux, les lieux, et bien plus encore !",
+			" est une entreprise de production vidéo basée en région parisienne. Nous sommes spécialisés dans les vidéos de visite en drone pour l'immobilier, les entreprises, les hôtels, les bureaux, les lieux, et bien plus encore !",
 		years_flying_drones: 'Pilote de drone depuis plus de 5 ans',
 		liability_insurance: 'Assurance responsabilité civile professionnelle',
 		video_montage: 'Montage vidéo et effets sonores',
