@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import * as Accordion from '$lib/components/ui/accordion';
 	import translate from './locales/function';
 
 	let questions = [
@@ -35,8 +36,7 @@
 			},
 			fr: {
 				question: 'Combien de temps faut-il pour filmer ?',
-				answer:
-					'Les visites de drone résidentielles prennent généralement entre 30 et 60 minutes à filmer.'
+				answer: 'Les tournages de visite imbolière prennent généralement entre 30 et 60 minutes.'
 			}
 		},
 		{
@@ -47,8 +47,7 @@
 			},
 			fr: {
 				question: 'Quel est le délai de préavis pour planifier mon vol ?',
-				answer:
-					'En général, vous pouvez planifier votre vol commercial dans un délai de 7 jours et votre vol résidentiel dans un délai de 2 jours.'
+				answer: `Vous pouvez planifier votre vol jusqu'à 7 jours avant la date pour un vol et votre vol résidentiel jusqu'à 2 jours avant.`
 			}
 		},
 		{
@@ -60,7 +59,7 @@
 			fr: {
 				question: 'Comment se déroule une prestation ?',
 				answer:
-					"Pendant une prestation, les étapes suivantes sont suivies dans l'ordre : exploration des lieux, établissement d'une trajectoire de capture vidéo initiale en fonction de vos préférences, le premier vol offre un aperçu de la vidéo, des vols supplémentaires sont effectués jusqu'à l'obtention d'un résultat satisfaisant. Le drone a une autonomie de vol de 40 minutes, répartie sur 3 batteries, ce qui permet de refaire plusieurs prises si nécessaire."
+					"Pendant une prestation, les étapes suivantes sont suivies dans l'ordre : parcours des lieux, établissement d'une trajectoire de capture vidéo initiale en fonction de vos préférences, le premier vol offre un aperçu de la vidéo, des vols supplémentaires sont effectués jusqu'à l'obtention d'un résultat satisfaisant. Le drone a une autonomie de vol de 40 minutes, répartie sur 3 batteries, ce qui permet de refaire plusieurs prises si nécessaire."
 			}
 		},
 		{
@@ -128,32 +127,16 @@
 			{translate('faq_title')}
 		</p>
 	</div>
-	<div class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200 text-gray-200">
-		{#each questions as { question, answer }}
-			<div class="py-5">
-				<details class="group">
-					<summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-						<span> {question}</span>
-						<span class="transition group-open:rotate-180">
-							<svg
-								fill="none"
-								height="24"
-								shape-rendering="geometricPrecision"
-								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="1.5"
-								viewBox="0 0 24 24"
-								width="24"
-								><path d="M6 9l6 6 6-6"></path>
-							</svg>
-						</span>
-					</summary>
-					<p class="group-open:animate-fadeIn mt-3 text-gray-200">
+	<Accordion.Root class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200 text-gray-200">
+		{#each questions as { question, answer }, index}
+			<Accordion.Item value={`item-${index}`}>
+				<Accordion.Trigger>{question}</Accordion.Trigger>
+				<Accordion.Content>
+					<p class="mt-3 text-gray-200">
 						{answer}
 					</p>
-				</details>
-			</div>
+				</Accordion.Content>
+			</Accordion.Item>
 		{/each}
-	</div>
+	</Accordion.Root>
 </div>
