@@ -9,7 +9,8 @@
 			key: 'residential',
 			en: {
 				title: 'Residential',
-				description: 'Sell your residential listings faster with DroneInside!'
+				description:
+					'Take advantage of a competitive edge to sell your residential listings faster!'
 			},
 			fr: {
 				title: 'Lieux résidentiels',
@@ -24,7 +25,7 @@
 			key: 'local-business',
 			en: {
 				title: 'Local Business',
-				description: 'Showcase your business with DroneInside!'
+				description: 'Highlight your business with a video for social media!'
 			},
 			fr: {
 				title: 'Entreprises Locales',
@@ -39,7 +40,7 @@
 			key: 'office',
 			en: {
 				title: 'Office',
-				description: 'Virtual Tours and Drone Video For Office Buildings'
+				description: 'Promote your workspaces / coworking with a custom video!'
 			},
 			fr: {
 				title: 'Bureaux',
@@ -54,7 +55,7 @@
 			key: 'hostel',
 			en: {
 				title: 'Hostel',
-				description: 'Fly through your hotel and resort with DroneInside'
+				description: 'Showcase your hotel complex with an immersive video!'
 			},
 			fr: {
 				title: 'Hôtels et hébergements locatifs',
@@ -68,7 +69,8 @@
 			key: 'construction',
 			en: {
 				title: 'Construction',
-				description: 'Capture your construction projects like never before with DroneInside!'
+				description:
+					'Capture and share the progress of your construction projects like never before!'
 			},
 			fr: {
 				title: 'Site de constructions',
