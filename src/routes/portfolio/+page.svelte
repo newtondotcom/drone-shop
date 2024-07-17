@@ -84,7 +84,7 @@
 						>
 					</button>
 				</Youtube>
-				<h2 class="text-center text-sm text-white">{video.description}</h2>
+				<h2 class="text-center text-sm font-semibold text-white">{video.description}</h2>
 			</div>
 		{/each}
 	</div>
