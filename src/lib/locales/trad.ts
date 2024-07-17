@@ -31,6 +31,7 @@ const translations = {
 		project: 'Your Project',
 		projectPlaceholder: 'Enter your message here',
 		sendButton: 'Send',
+		cancelButton: 'Cancel',
 		services_duration: 'On site for',
 		services_price: 'Starting from',
 		services_title: 'We fly drones indoors to create seamless video tours',
@@ -83,6 +84,7 @@ const translations = {
 		project: 'Votre projet',
 		projectPlaceholder: 'Mon message',
 		sendButton: 'Envoyer',
+		cancelButton: 'Annuler',
 		services_duration: 'Durée prestation',
 		services_price: 'À partir de',
 		services_title:
