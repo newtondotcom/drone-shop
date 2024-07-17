@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Button } from '$lib/components/ui/button/index.js';
 	import Youtube from 'svelte-youtube-embed';
 	import Divider from '$lib/Divider.svelte';
 	import translate from '$lib/locales/function';
@@ -69,12 +70,9 @@
 			</p>
 
 			<div class="mt-4 md:mt-8">
-				<button
-					class="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
-					on:click={() => goto('/contact')}
-				>
+				<Button on:click={() => goto('/contact')} class="font-semibold">
 					{translate('get_started')}
-				</button>
+				</Button>
 			</div>
 		</div>
 	</div>
@@ -94,8 +92,10 @@
 	<div
 		class="msm:-translate-y-1/3 absolute left-1/2 top-1/2 -translate-x-1/2 transform text-center text-white lg:h-40 lg:-translate-y-3/4 lg:px-[20px] lg:py-[20px]"
 	>
-		<h2 class="msm:text-xl py-4 text-6xl">{translate('who_we_are')}</h2>
-		<h3 class="msm:text-lg py-2 text-3xl">{translate('company_description')}</h3>
+		<h2 class="msm:text-xl py-4 text-6xl font-bold">{translate('who_we_are')}</h2>
+		<h3 class="msm:text-lg py-2 text-3xl font-semibold">
+			<span class="font-bold text-primary">DronInside</span>{translate('company_description')}
+		</h3>
 		<ul class="msm:text-sm msm:opacity-50 self-center py-2 text-xl">
 			<li>{translate('years_flying_drones')}</li>
 			<!--
@@ -114,7 +114,7 @@
 <Divider />
 
 <div class="msm:px-4 mx-auto flex flex-col py-4 text-white lg:w-4/5">
-	<div class="my-8 flex self-center text-5xl">SHOWREEL</div>
+	<div class="my-8 flex self-center text-5xl font-semibold text-primary">SHOWREEL</div>
 	<Youtube
 		id="TTYi8xfwReI"
 		--title-color={titleColor}

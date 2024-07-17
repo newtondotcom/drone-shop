@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { Button } from '$lib/components/ui/button/index.js';
 	import { goto } from '$app/navigation';
 	import Divider from '$lib/Divider.svelte';
 	import Footer from '$lib/Footer.svelte';
@@ -13,7 +14,6 @@
 	NProgress.configure({
 		minimum: 0.16
 	});
-
 	$: {
 		if ($navigating) {
 			NProgress.start();
@@ -94,20 +94,14 @@
 				<div class="flex items-center gap-4">
 					<div class="sm:flex sm:gap-4">
 						<div class="hidden sm:flex">
-							<button
-								on:click={() => goto('/contact')}
-								class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-							>
+							<Button on:click={() => goto('/contact')}>
 								{translate('contact_us')}
-							</button>
+							</Button>
 						</div>
 					</div>
 
 					<div class="block md:hidden">
-						<button
-							class="rounded bg-gray-100 p-2 text-gray-400 transition hover:text-gray-400/75"
-							on:click={() => (menu = !menu)}
-						>
+						<Button on:click={() => (menu = !menu)}>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								class="h-5 w-5 text-emerald-600"
@@ -118,7 +112,7 @@
 							>
 								<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
 							</svg>
-						</button>
+						</Button>
 					</div>
 				</div>
 			</div>
