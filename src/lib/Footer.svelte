@@ -48,7 +48,7 @@
 			</li>
 		</ul>
 
-		<div class="mt-12 flex justify-center text-teal-600">{translate('made_from')}</div>
+		<div class="mt-12 flex justify-center text-primary">{translate('made_from')}</div>
 
 		<ul class="mt-12 flex justify-center gap-6 md:gap-8">
 			<li>
