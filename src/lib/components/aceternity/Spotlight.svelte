@@ -3,7 +3,6 @@
 
 	export let className;
 	export let fill;
-	// {fill || "white"} line 26
 </script>
 
 <svg
@@ -23,7 +22,7 @@
 			ry="273.501"
 			transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
 			class="text-primary"
-			fill="currentColor"
+			fill={fill || 'white'}
 			fill-opacity="0.21"
 		></ellipse>
 	</g>
