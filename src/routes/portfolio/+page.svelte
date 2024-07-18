@@ -54,7 +54,7 @@
 	<title>Portfolio | DronInside</title>
 </svelte:head>
 
-<div class="min-h-screen bg-gray-800">
+<div class="min-h-screen">
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:px-20 lg:py-8">
 		{#each videos as video}
 			<div class="mx-4 my-4 shrink">
@@ -84,7 +84,7 @@
 						>
 					</button>
 				</Youtube>
-				<h2 class="text-center text-sm font-semibold text-white">{video.description}</h2>
+				<h2 class="text-center text-sm font-semibold text-black">{video.description}</h2>
 			</div>
 		{/each}
 	</div>

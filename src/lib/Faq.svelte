@@ -120,19 +120,19 @@
 	});
 </script>
 
-<div class="mx-auto min-h-screen max-w-screen-xl bg-gray-800 px-5">
+<div class="mx-auto min-h-screen max-w-screen-xl px-5">
 	<div class="flex flex-col items-center">
-		<h2 class="mt-5 text-5xl font-bold tracking-tight text-gray-200">FAQ</h2>
+		<h2 class="mt-5 text-5xl font-bold tracking-tight text-black">FAQ</h2>
 		<p class="mt-3 text-xl text-gray-300">
 			{translate('faq_title')}
 		</p>
 	</div>
-	<Accordion.Root class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200 text-gray-200">
+	<Accordion.Root class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200 text-black">
 		{#each questions as { question, answer }, index}
 			<Accordion.Item value={`item-${index}`}>
 				<Accordion.Trigger>{question}</Accordion.Trigger>
 				<Accordion.Content>
-					<p class="mt-3 text-gray-200">
+					<p class="mt-3 text-black">
 						{answer}
 					</p>
 				</Accordion.Content>

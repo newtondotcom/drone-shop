@@ -66,7 +66,7 @@
 <div class="flex min-h-screen w-full flex-col justify-center align-middle">
 	{#if isSubmitted}
 		<div class="-mt-20 flex flex-col self-center pb-4 pt-8 align-middle">
-			<h1 class="text-2xl font-bold text-gray-100 sm:text-3xl">
+			<h1 class="text-2xl font-bold text-black sm:text-3xl">
 				{translate('formSubmitted')}
 			</h1>
 
@@ -75,7 +75,7 @@
 			</p>
 		</div>
 	{:else}
-		<Card.Root class="w-[350px] self-center">
+		<Card.Root class="w-[450px] self-center">
 			<Card.Header>
 				<Card.Title>{translate('contactUs')}</Card.Title>
 				<Card.Description>{translate('responseMessage')}</Card.Description>
@@ -114,7 +114,7 @@
 							<Label for="projects">{translate('choose_service')}</Label>
 							<Select.Root>
 								<Select.Trigger id="projects" bind:value={project}>
-									<Select.Value placeholder="Select" />
+									<Select.Value placeholder={translate('selectPlaceholder')} />
 								</Select.Trigger>
 								<Select.Content>
 									{#each services as framework}

@@ -45,7 +45,7 @@
 	<div
 		class="modal msm:hidden fixed left-0 top-0 z-50 flex h-full w-full items-center justify-center p-8 lg:p-0"
 	>
-		<div class="modal-overlay fixed h-full w-full bg-gray-900 opacity-50"></div>
+		<div class="modal-overlay fixed h-full w-full opacity-50"></div>
 		<div
 			class="z-50 mx-auto w-full overflow-y-auto rounded-lg bg-white shadow-xl lg:h-max lg:w-1/2"
 		>

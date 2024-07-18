@@ -99,7 +99,7 @@
 	<title>Services | DronInside</title>
 </svelte:head>
 
-<div class="mx-auto min-h-screen max-w-screen-xl bg-gray-800 px-5 pb-20">
+<div class="mx-auto min-h-screen max-w-screen-xl px-5 pb-20">
 	<Title title={translate('services_title')} subtitle={translate('service_subtitle')} />
 
 	<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">

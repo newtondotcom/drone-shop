@@ -46,7 +46,7 @@
 </svelte:head>
 
 {#if $page.url.pathname !== '/logo'}
-	<header class="bg-gray-800 text-white">
+	<header class=" text-black">
 		<div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
 			<div class="flex h-16 items-center justify-between">
 				<div class="md:flex md:items-center md:gap-12">
@@ -151,12 +151,10 @@
 				</ul>
 			</nav>
 		{/if}
-
-		<Divider />
 	</header>
 {/if}
 
-<main class="bg-gray-800">
+<main>
 	<slot />
 </main>
 
