@@ -9,7 +9,7 @@ const translations = {
 		video_text:
 			'We fly small drones indoors creating seamless walkthrough videos for real estate, businesses, hotels, & more.',
 		get_started: 'Get Started Today',
-		who_we_are: 'Who We Are',
+		who_we_are: 'Who are we ?',
 		company_description:
 			' is a video production company based in the Parisian region. We specialize in drone video tours for real estate, businesses, hotels, offices, venues, and much more!',
 		years_flying_drones: '5+ Years flying Drones',
@@ -30,6 +30,7 @@ const translations = {
 		phonePlaceholder: '+1234567890',
 		project: 'Your Project',
 		projectPlaceholder: 'Enter your message here',
+		selectPlaceholder: 'Select a service',
 		sendButton: 'Send',
 		cancelButton: 'Cancel',
 		services_duration: 'On site for',
@@ -62,7 +63,7 @@ const translations = {
 		video_text:
 			"Nous volons en intérieur avec de petits drones pour créer une visite virtuelle vidéo sans précédent pour l'immobilier, les entreprises, les hôtels, et bien plus encore.",
 		get_started: "Commencez aujourd'hui",
-		who_we_are: 'Qui nous sommes',
+		who_we_are: 'Qui sommes-nous ?',
 		company_description:
 			" est une entreprise de production vidéo basée en région parisienne. Nous sommes spécialisés dans les vidéos de visite en drone pour l'immobilier, les entreprises, les hôtels, les bureaux, les lieux, et bien plus encore !",
 		years_flying_drones: 'Pilote de drone depuis plus de 5 ans',
@@ -83,6 +84,7 @@ const translations = {
 		phonePlaceholder: '+33644444444',
 		project: 'Votre projet',
 		projectPlaceholder: 'Mon message',
+		selectPlaceholder: 'Sélectionner un service',
 		sendButton: 'Envoyer',
 		cancelButton: 'Annuler',
 		services_duration: 'Durée prestation',
