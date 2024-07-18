@@ -5,67 +5,32 @@
 	import translate from '$lib/locales/function';
 	import { goto } from '$app/navigation';
 	import Modal from '$lib/Modal.svelte';
-	import { onMount } from 'svelte';
+	import Spotlight from '$lib/Spotlight.svelte';
 
 	const titleColor = '#fff';
 	const titleShadowColor = '#000';
 	const titleFontFamily = 'Montserrat';
-
-	let loading = false;
-	let mobile = false;
-
-	function toggleLoading() {
-		loading = !loading;
-	}
-
-	function handleVideoLoaded(event: Event & { currentTarget: EventTarget & HTMLVideoElement }) {
-		toggleLoading();
-	}
-
-	onMount(() => {
-		const width = window.innerWidth;
-		if (width < 640) {
-			mobile = true;
-		}
-	});
 </script>
 
 <svelte:head>
 	<title>DronInside</title>
 </svelte:head>
 
-<Modal open={loading} bind:loading />
+<div class="hidden lg:flex">
+	<img src="/cover.png" class="h-full w-full rounded-3xl object-cover px-10 py-4" alt="cover" />
+</div>
+<div class="h-[150px] lg:hidden">
+	<img src="/mobile.png" alt="header" class="h-full w-full object-cover" />
+</div>
 
-{#if !mobile}
-	<div class="msm:hidden">
-		<!-- svelte-ignore a11y-media-has-caption -->
-		<!-- 
-    <video 
-    src="/video.mp4" 
-    autoplay 
-    loop
-    on:loadeddata={handleVideoLoaded}
-    id="video"
-    class="w-full h-full object-cover" />
-  -->
-		<img src="/cover.png" class="h-full w-full object-cover" alt="cover" />
-	</div>
-{:else}
-	<div class="msm:h-[150px] lg:hidden">
-		<img src="/mobile.png" alt="header" class="h-full w-full object-cover" />
-	</div>
-{/if}
-
-<section
-	class="flex flex-row justify-center overflow-hidden bg-gray-800 align-middle sm:grid sm:grid-cols-2"
->
+<section class="flex flex-row justify-center overflow-hidden align-middle sm:grid sm:grid-cols-2">
 	<div class="p-8 md:p-12 lg:px-16 lg:py-24">
 		<div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-			<h2 class="text-2xl font-bold text-gray-100 md:text-3xl">
+			<h2 class="text-2xl font-bold text-black md:text-3xl">
 				{translate('video_description')}
 			</h2>
 
-			<p class="hidden text-gray-200 md:mt-4 md:block">
+			<p class="hidden text-black md:mt-4 md:block">
 				{translate('video_text')}
 			</p>
 
@@ -76,44 +41,38 @@
 			</div>
 		</div>
 	</div>
-	<div class="msm:hidden flex flex-col self-center align-middle">
-		<img alt="Drone" src="/camera.gif" height="auto" class="flex w-full object-cover lg:scale-75" />
-	</div>
 </section>
 
 <Divider />
 
-<div class="relative py-0 lg:h-[1000px]">
-	<img
-		src="/avata.png"
-		alt="test"
-		class="msm:-y-translate-1/3 mx-auto opacity-70 lg:w-2/3 lg:-translate-y-[100px]"
-	/>
-	<div
-		class="msm:-translate-y-1/3 absolute left-1/2 top-1/2 -translate-x-1/2 transform text-center text-white lg:h-40 lg:-translate-y-3/4 lg:px-[20px] lg:py-[20px]"
-	>
-		<h2 class="msm:text-xl py-4 text-6xl font-bold">{translate('who_we_are')}</h2>
-		<h3 class="msm:text-lg py-2 text-3xl font-semibold">
-			<span class="font-bold text-primary">DronInside</span>{translate('company_description')}
-		</h3>
-		<ul class="msm:text-sm msm:opacity-50 self-center py-2 text-xl">
-			<li>{translate('years_flying_drones')}</li>
-			<!--
-      <li>{translate("liability_insurance")}</li>
-      -->
-			<li>{translate('video_montage')}</li>
-		</ul>
+<div
+	class="bg-grid-white/[0.02] relative flex h-[40rem] w-full flex-col overflow-hidden rounded-md bg-black/[0.96] antialiased md:items-center md:justify-center"
+>
+	<Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
+	<div class=" relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">
+		<h1
+			class="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl"
+		>
+			{translate('who_we_are')}
+		</h1>
+		<p class="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-300">
+			<span class="font-bold text-primary">Droninside</span>
+			{translate('company_description')}
+		</p>
 	</div>
+	<!--
+	<div class="absolute bottom-0 left-0 right-0 flex flex-row justify-center items-center text-neutral-200 h-16 font-bold">
+		<div class="mx-4">{translate('years_flying_drones')}</div>
+		<div class="mx-4">{translate('video_montage')}</div>
+	</div>
+	-->
 </div>
 
-<!--
-  <Testimonials />
-  -->
 <div class="msm:h-20"></div>
 
 <Divider />
 
-<div class="msm:px-4 mx-auto flex flex-col py-4 text-white lg:w-4/5">
+<div class="msm:px-4 mx-auto flex flex-col py-4 text-black lg:w-4/5">
 	<div class="my-8 flex self-center text-5xl font-semibold text-primary">SHOWREEL</div>
 	<Youtube
 		id="TTYi8xfwReI"
