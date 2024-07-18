@@ -62,27 +62,25 @@
 						<nav aria-label="Global">
 							<ul class="flex items-center gap-6 text-sm">
 								<li>
-									<button class="transition hover:text-gray-500/75" on:click={() => goto('/')}
+									<button class="transition hover:text-primary" on:click={() => goto('/')}
 										>{translate('home')}</button
 									>
 								</li>
 
 								<li>
-									<button
-										class="transition hover:text-gray-500/75"
-										on:click={() => goto('/services')}>{translate('services')}</button
+									<button class="transition hover:text-primary" on:click={() => goto('/services')}
+										>{translate('services')}</button
 									>
 								</li>
 
 								<li>
-									<button
-										class="transition hover:text-gray-500/75"
-										on:click={() => goto('/portfolio')}>{translate('portfolio')}</button
+									<button class="transition hover:text-primary" on:click={() => goto('/portfolio')}
+										>{translate('portfolio')}</button
 									>
 								</li>
 
 								<li>
-									<button class="transition hover:text-gray-500/75" on:click={() => goto('/faq')}
+									<button class="transition hover:text-primary" on:click={() => goto('/faq')}
 										>{translate('faq')}</button
 									>
 								</li>
@@ -104,7 +102,7 @@
 						<Button on:click={() => (menu = !menu)}>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								class="h-5 w-5 text-emerald-600"
+								class="h-5 w-5 text-primary"
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"
@@ -124,27 +122,27 @@
 					class=" mb-2 w-full flex-col items-center justify-center gap-6 text-center align-middle text-lg"
 				>
 					<li>
-						<button class="py-2 transition hover:text-gray-500/75" on:click={() => goMobile('/')}
+						<button class="py-2 transition hover:text-primary" on:click={() => goMobile('/')}
 							>{translate('home')}</button
 						>
 					</li>
 
 					<li>
 						<button
-							class="py-2 transition hover:text-gray-500/75"
+							class="py-2 transition hover:text-primary"
 							on:click={() => goMobile('/services')}>{translate('services')}</button
 						>
 					</li>
 
 					<li>
 						<button
-							class="py-2 transition hover:text-gray-500/75"
+							class="py-2 transition hover:text-primary"
 							on:click={() => goMobile('/portfolio')}>{translate('portfolio')}</button
 						>
 					</li>
 
 					<li>
-						<button class="py-2 transition hover:text-gray-500/75" on:click={() => goMobile('/faq')}
+						<button class="py-2 transition hover:text-primary" on:click={() => goMobile('/faq')}
 							>{translate('faq')}</button
 						>
 					</li>

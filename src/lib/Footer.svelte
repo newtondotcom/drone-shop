@@ -15,14 +15,14 @@
 
 		<ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
 			<li>
-				<button class="text-gray-400 transition hover:text-gray-500/75" on:click={() => goto('/')}>
+				<button class="text-gray-400 transition hover:text-primary" on:click={() => goto('/')}>
 					{translate('home')}
 				</button>
 			</li>
 
 			<li>
 				<button
-					class="text-gray-400 transition hover:text-gray-500/75"
+					class="text-gray-400 transition hover:text-primary"
 					on:click={() => goto('/services')}
 				>
 					{translate('services')}
@@ -31,7 +31,7 @@
 
 			<li>
 				<button
-					class="text-gray-400 transition hover:text-gray-500/75"
+					class="text-gray-400 transition hover:text-primary"
 					on:click={() => goto('/portfolio')}
 				>
 					{translate('portfolio')}
@@ -39,10 +39,7 @@
 			</li>
 
 			<li>
-				<button
-					class="text-gray-400 transition hover:text-gray-500/75"
-					on:click={() => goto('/faq')}
-				>
+				<button class="text-gray-400 transition hover:text-primary" on:click={() => goto('/faq')}>
 					{translate('faq')}
 				</button>
 			</li>
@@ -56,7 +53,7 @@
 					href="https://instagram.com/droninside"
 					rel="noreferrer"
 					target="_blank"
-					class="text-gray-400 transition hover:text-gray-500/75"
+					class="text-gray-400 transition hover:text-primary"
 				>
 					<span class="sr-only">Instagram</span>
 					<svg
@@ -96,7 +93,7 @@
 					href="https://www.linkedin.com/in/robin-augereau/"
 					rel="noreferrer"
 					target="_blank"
-					class="text-gray-400 transition hover:text-gray-500/75"
+					class="text-gray-400 transition hover:text-primary"
 				>
 					<span class="sr-only">LinkedIn</span>
 					<svg
@@ -117,7 +114,7 @@
 					href="https://github.com/newtondotcom/drone-shop.git"
 					rel="noreferrer"
 					target="_blank"
-					class="text-gray-400 transition hover:text-gray-500/75"
+					class="text-gray-400 transition hover:text-primary"
 				>
 					<span class="sr-only">GitHub</span>
 					<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

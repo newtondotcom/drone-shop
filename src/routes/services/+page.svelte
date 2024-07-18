@@ -114,7 +114,7 @@
 					<dl>
 						<div>
 							<dt class="sr-only">Duration</dt>
-							<dd class="font-medium">{service.title}</dd>
+							<dd class="font-semibold text-primary">{service.title}</dd>
 						</div>
 
 						<div>
@@ -168,7 +168,7 @@
 						<div class="msm:flex msm:flex-row sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
 							<svg
 								viewBox="0 0 24 24"
-								class="w-6 text-indigo-500"
+								class="w-6 text-primary"
 								fill="none"
 								xmlns="http://www.w3.org/2000/svg"
 								><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
@@ -194,7 +194,7 @@
 						<div class="msm:flex msm:flex-row sm:inline-flex sm:shrink-0 sm:items-center sm:gap-2">
 							<svg
 								fill="currentColor"
-								class="w-6 text-indigo-500"
+								class="w-6 text-primary"
 								viewBox="0 0 24 24"
 								xmlns="http://www.w3.org/2000/svg"
 								><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
