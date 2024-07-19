@@ -17,29 +17,37 @@
 	<title>DronInside</title>
 </svelte:head>
 
-<div class="hidden lg:flex">
-	<img src="/cover.png" class="h-full w-full rounded-3xl object-cover px-10 py-4" alt="cover" />
-</div>
-<div class="h-[150px] lg:hidden">
-	<img src="/mobile.png" alt="header" class="h-full w-full object-cover" />
-</div>
+<section class="flex flex-col justify-center overflow-hidden px-6 align-middle">
+	<div class="hidden px-4 lg:flex">
+		<img src="/cover.png" class="h-full w-full rounded-xl object-cover" alt="cover" />
+	</div>
+	<div class="h-[150px] lg:hidden">
+		<img src="/mobile.png" alt="header" class="h-full w-full object-cover" />
+	</div>
+	<div class="flex flex-row">
+		<div class="w-1/2 px-10 py-8">
+			<div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+				<h2 class="text-2xl font-bold text-black md:text-3xl">
+					{translate('video_description')}
+				</h2>
 
-<section class="flex flex-row justify-center overflow-hidden align-middle sm:grid sm:grid-cols-2">
-	<div class="p-8 md:p-12 lg:px-16 lg:py-24">
-		<div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-			<h2 class="text-2xl font-bold text-black md:text-3xl">
-				{translate('video_description')}
-			</h2>
+				<p class="hidden text-black md:mt-4 md:block">
+					{translate('video_text')}
+				</p>
 
-			<p class="hidden text-black md:mt-4 md:block">
-				{translate('video_text')}
-			</p>
-
-			<div class="mt-4 md:mt-8">
-				<Button on:click={() => goto('/contact')} class="font-semibold">
-					{translate('get_started')}
-				</Button>
+				<div class="mt-4 md:mt-8">
+					<Button on:click={() => goto('/contact')} class="font-semibold">
+						{translate('get_started')}
+					</Button>
+				</div>
 			</div>
+		</div>
+		<div class="w-1/2">
+			<img
+				src="/hotel.jpeg"
+				alt="header"
+				class="z-10 h-full w-full translate-y-[-10%] object-cover shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]"
+			/>
 		</div>
 	</div>
 </section>
