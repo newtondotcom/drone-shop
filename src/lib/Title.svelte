@@ -3,7 +3,7 @@
 	export let subtitle: string;
 </script>
 
-<div class="mb-8 ml-10 pt-8">
+<div class="mb-8 px-16 pt-8">
 	<h1 class="text-2xl font-bold text-black sm:text-3xl">
 		{title}
 	</h1>

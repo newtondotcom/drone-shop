@@ -6,7 +6,7 @@
 
 <footer class="flex">
 	<div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-		<div class="flex justify-center text-teal-600">
+		<div class="flex justify-center">
 			<img class="h-8 w-auto sm:h-10" src="/logo.png" alt="Logo" />
 		</div>
 

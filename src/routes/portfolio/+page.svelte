@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Youtube from 'svelte-youtube-embed';
 	import { onMount } from 'svelte';
+	import Title from '$lib/Title.svelte';
+	import translate from '$lib/locales/function';
 
 	let videos = [
 		{
@@ -54,8 +56,9 @@
 	<title>Portfolio | DronInside</title>
 </svelte:head>
 
-<div class="min-h-screen">
-	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:px-20 lg:py-8">
+<div class="flex flex-col">
+	<Title title={translate('services_title')} subtitle={translate('service_subtitle')} />
+	<div class="grid grid-cols-1 gap-2 px-24 md:grid-cols-2 lg:grid-cols-4">
 		{#each videos as video}
 			<div class="mx-4 my-4 shrink">
 				<Youtube

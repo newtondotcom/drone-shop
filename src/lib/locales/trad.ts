@@ -65,7 +65,7 @@ const translations = {
 		get_started: "Commencez aujourd'hui",
 		who_we_are: 'Qui sommes-nous ?',
 		company_description:
-			" est une entreprise de production vidéo basée en région parisienne. Nous sommes spécialisés dans les vidéos de visite en drone pour l'immobilier, les entreprises, les hôtels, les bureaux, les lieux, et bien plus encore !",
+			" est une entreprise de production vidéo basée en région parisienne. Nous sommes spécialisés dans les vidéos de visite en drone pour l'immobilier, les entreprises, les hôtels, les bureaux, et bien plus encore !",
 		years_flying_drones: 'Pilote de drone depuis plus de 5 ans',
 		liability_insurance: 'Assurance responsabilité civile professionnelle',
 		video_montage: 'Montage vidéo et effets sonores',
@@ -92,7 +92,7 @@ const translations = {
 		services_title:
 			'Nous volons en intérieur avec des petits drones pour créer des visites virtuelles sans précédent',
 		service_subtitle:
-			"La visite virtuelle par excellence pour l'immobilier commercial, les entreprises, les hôtels, la location d'appartements, et bien plus encore",
+			"La visite virtuelle par excellence pour l'immobilier commercial, les entreprises, les hôtels, la location d'appartements, et bien plus encore ...",
 		contact_us: 'Réserver maintenant',
 		faq_title: 'Questions Fréquemment Posées',
 		made_from: 'Fait avec ❤️ à Paris 🥐',
