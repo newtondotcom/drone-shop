@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { goto } from '$app/navigation';
-	import Divider from '$lib/Divider.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import translate from '$lib/locales/function';
 	import '../app.css';
@@ -62,26 +61,46 @@
 						<nav aria-label="Global">
 							<ul class="flex items-center gap-6 text-sm">
 								<li>
-									<button class="transition hover:text-primary" on:click={() => goto('/')}
-										>{translate('home')}</button
+									<button
+										class="transition hover:text-primary {$page.url.pathname == '/'
+											? 'text-primary/60'
+											: ' '}"
+										on:click={() => goto('/')}
+									>
+										{translate('home')}</button
 									>
 								</li>
 
 								<li>
-									<button class="transition hover:text-primary" on:click={() => goto('/services')}
-										>{translate('services')}</button
+									<button
+										class="transition hover:text-primary {$page.url.pathname == '/services'
+											? 'text-primary/60'
+											: ' '}"
+										on:click={() => goto('/services')}
+									>
+										{translate('services')}</button
 									>
 								</li>
 
 								<li>
-									<button class="transition hover:text-primary" on:click={() => goto('/portfolio')}
-										>{translate('portfolio')}</button
+									<button
+										class="transition hover:text-primary {$page.url.pathname == '/portfolio'
+											? 'text-primary/60'
+											: ' '}"
+										on:click={() => goto('/portfolio')}
+									>
+										{translate('portfolio')}</button
 									>
 								</li>
 
 								<li>
-									<button class="transition hover:text-primary" on:click={() => goto('/faq')}
-										>{translate('faq')}</button
+									<button
+										class="transition hover:text-primary {$page.url.pathname == '/faq'
+											? 'text-primary/60'
+											: ' '}"
+										on:click={() => goto('/faq')}
+									>
+										{translate('faq')}</button
 									>
 								</li>
 							</ul>
@@ -122,28 +141,42 @@
 					class=" mb-2 w-full flex-col items-center justify-center gap-6 text-center align-middle text-lg"
 				>
 					<li>
-						<button class="py-2 transition hover:text-primary" on:click={() => goMobile('/')}
-							>{translate('home')}</button
+						<button
+							class="py-2 transition hover:text-primary {$page.url.pathname == '/'
+								? 'text-primary/60'
+								: ' '}"
+							on:click={() => goMobile('/')}>{translate('home')}</button
 						>
 					</li>
 
 					<li>
 						<button
-							class="py-2 transition hover:text-primary"
-							on:click={() => goMobile('/services')}>{translate('services')}</button
+							class="py-2 transition hover:text-primary {$page.url.pathname == '/services'
+								? 'text-primary/60'
+								: ' '}"
+							on:click={() => goMobile('/services')}
+						>
+							{translate('services')}
+						</button>
+					</li>
+
+					<li>
+						<button
+							class="py-2 transition hover:text-primary {$page.url.pathname == '/portfolio'
+								? 'text-primary/60'
+								: ' '}"
+							on:click={() => goMobile('/portfolio')}
+						>
+							{translate('portfolio')}</button
 						>
 					</li>
 
 					<li>
 						<button
-							class="py-2 transition hover:text-primary"
-							on:click={() => goMobile('/portfolio')}>{translate('portfolio')}</button
-						>
-					</li>
-
-					<li>
-						<button class="py-2 transition hover:text-primary" on:click={() => goMobile('/faq')}
-							>{translate('faq')}</button
+							class="py-2 transition hover:text-primary {$page.url.pathname == '/faq'
+								? 'text-primary/60'
+								: ' '}"
+							on:click={() => goMobile('/faq')}>{translate('faq')}</button
 						>
 					</li>
 				</ul>

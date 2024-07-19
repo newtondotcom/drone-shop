@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
 	import translate from '$lib/locales/function';
+	import { page } from '$app/stores';
 </script>
 
 <footer class="flex">
@@ -15,14 +16,21 @@
 
 		<ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
 			<li>
-				<button class="text-gray-400 transition hover:text-primary" on:click={() => goto('/')}>
+				<button
+					class="text-gray-400 transition hover:text-primary {$page.url.pathname == '/'
+						? 'text-primary/60'
+						: ' '}"
+					on:click={() => goto('/')}
+				>
 					{translate('home')}
 				</button>
 			</li>
 
 			<li>
 				<button
-					class="text-gray-400 transition hover:text-primary"
+					class="text-gray-400 transition hover:text-primary {$page.url.pathname == '/services'
+						? 'text-primary/60'
+						: ' '}"
 					on:click={() => goto('/services')}
 				>
 					{translate('services')}
@@ -31,7 +39,9 @@
 
 			<li>
 				<button
-					class="text-gray-400 transition hover:text-primary"
+					class="text-gray-400 transition hover:text-primary {$page.url.pathname == '/portfolio'
+						? 'text-primary/60'
+						: ' '}"
 					on:click={() => goto('/portfolio')}
 				>
 					{translate('portfolio')}
@@ -39,7 +49,12 @@
 			</li>
 
 			<li>
-				<button class="text-gray-400 transition hover:text-primary" on:click={() => goto('/faq')}>
+				<button
+					class="text-gray-400 transition hover:text-primary {$page.url.pathname == '/faq'
+						? 'text-primary/60'
+						: ' '}"
+					on:click={() => goto('/faq')}
+				>
 					{translate('faq')}
 				</button>
 			</li>
