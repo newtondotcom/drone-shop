@@ -4,4 +4,4 @@
 	export let className;
 </script>
 
-<div class={cn('msm:h-[3px] h-[5px] bg-primary', className)} />
+<div class={cn('msm:h-[3px] h-[5px] bg-secondary', className)} />
