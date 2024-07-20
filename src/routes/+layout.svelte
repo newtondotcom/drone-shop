@@ -121,7 +121,7 @@
 						<Button on:click={() => (menu = !menu)}>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
-								class="h-5 w-5 text-primary"
+								class="h-5 w-5 text-secondary"
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke="currentColor"

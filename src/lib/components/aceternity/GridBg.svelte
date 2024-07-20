@@ -1,5 +1,5 @@
 <div
-	class="relative flex h-[50rem] w-full flex-col items-center justify-center bg-white align-middle bg-grid-black/[0.2] dark:bg-black dark:bg-grid-white/[0.2]"
+	class="relative flex h-[20rem] w-full flex-col items-center justify-center bg-white align-middle bg-grid-black/[0.2] dark:bg-black dark:bg-grid-white/[0.2] md:h-[50rem]"
 >
 	<div
 		class="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"

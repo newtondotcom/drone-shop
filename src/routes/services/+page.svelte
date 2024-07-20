@@ -117,7 +117,7 @@
 <div class="flex flex-col">
 	<Title title={translate('services_title')} subtitle={translate('service_subtitle')} />
 
-	<div class="grid grid-cols-1 gap-4 px-24 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
+	<div class="grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:grid-cols-3 md:px-24 lg:grid-cols-3">
 		{#each services as service}
 			<button on:click={() => goto(`/contact`)}>
 				<Card.Root>

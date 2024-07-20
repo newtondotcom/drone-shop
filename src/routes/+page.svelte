@@ -1,17 +1,11 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button/index.js';
-	import Youtube from 'svelte-youtube-embed';
 	import Divider from '$lib/components/ux/Divider.svelte';
 	import translate from '$lib/locales/function';
 	import { goto } from '$app/navigation';
-	import Modal from '$lib/components/experimental/Modal.svelte';
 	import Spotlight from '$lib/components/aceternity/Spotlight.svelte';
 	import GridBg from '$lib/components/aceternity/GridBg.svelte';
 	import { YouTube as YTB } from 'sveltekit-embed';
-
-	const titleColor = '#fff';
-	const titleShadowColor = '#000';
-	const titleFontFamily = 'Montserrat';
 </script>
 
 <svelte:head>
@@ -26,7 +20,9 @@
 		<img src="/mobile.jpg" alt="header" class="h-full w-full object-cover" />
 	</div>
 	<div class="flex flex-row">
-		<div class="my-auto flex h-full w-1/2 flex-col justify-center px-10 align-middle">
+		<div
+			class="my-auto flex h-full w-full flex-col justify-center px-10 py-8 align-middle md:w-1/2 md:py-0"
+		>
 			<div class="mx-auto max-w-xl text-center">
 				<h2 class="text-2xl font-bold text-black md:text-3xl">
 					{translate('video_description')}
@@ -43,7 +39,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="w-1/2">
+		<div class="hidden w-1/2 md:block">
 			<img
 				src="/tranche.jpg"
 				alt="header"
@@ -56,7 +52,7 @@
 <Divider />
 
 <div
-	class="relative flex h-[40rem] w-full flex-col overflow-hidden rounded-md bg-white/[0.96] antialiased bg-grid-white/[0.02] dark:bg-black/[0.96] md:items-center md:justify-center"
+	class="relative flex h-[25rem] w-full flex-col overflow-hidden rounded-md bg-white/[0.96] antialiased bg-grid-white/[0.02] dark:bg-black/[0.96] md:h-[40rem] md:items-center md:justify-center"
 >
 	<Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="currentColor" />
 	<div class=" relative z-10 mx-auto w-full max-w-7xl p-4 pt-20 md:pt-0">

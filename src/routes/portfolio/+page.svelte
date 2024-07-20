@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Youtube from 'svelte-youtube-embed';
 	import { onMount } from 'svelte';
-	import Title from '$lib/Title.svelte';
+	import Title from '$lib/components/ux/Title.svelte';
 	import translate from '$lib/locales/function';
 
 	let videos = [
@@ -58,7 +58,7 @@
 
 <div class="flex flex-col">
 	<Title title={translate('services_title')} subtitle={translate('service_subtitle')} />
-	<div class="grid grid-cols-1 gap-2 px-24 md:grid-cols-2 lg:grid-cols-4">
+	<div class="grid grid-cols-1 gap-2 px-4 md:grid-cols-2 md:px-24 lg:grid-cols-4">
 		{#each videos as video}
 			<div class="mx-4 my-4 shrink">
 				<Youtube
