@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { cn } from '$lib/utils';
+	import { cn } from '$lib/scripts/utils';
 
 	export let className;
 	export let fill;
