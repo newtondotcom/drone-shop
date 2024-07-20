@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import Title from '$lib/Title.svelte';
+	import Title from '$lib/components/ux/Title.svelte';
 	import translate from '$lib/locales/function';
 	import { onMount } from 'svelte';
 	import * as Card from '$lib/components/ui/card';
@@ -18,7 +18,7 @@
 				description:
 					"Profitez d'un avantage concurrentiel pour vendre vos annonces résidentielles plus rapidement !"
 			},
-			price: 199,
+			price: 190,
 			duration: 60,
 			img: '/res.avif'
 		},
@@ -33,9 +33,23 @@
 				description:
 					'Mettez en valeur votre commerce avec une vidéo à destination des réseaux sociaux !'
 			},
-			price: 199,
+			price: 190,
 			duration: 60,
 			img: '/local-business.jpeg'
+		},
+		{
+			key: 'event',
+			en: {
+				title: 'Events',
+				description: 'Let us cover your event from a unique perspective!'
+			},
+			fr: {
+				title: 'Evenementiel',
+				description: 'Laissez nous couvrir votre évènement sous un angle inédit !'
+			},
+			price: 500,
+			duration: '∞',
+			img: '/event.jpeg'
 		},
 		{
 			key: 'office',
@@ -48,7 +62,7 @@
 				description:
 					'Faites la promotion de vos espaces de travail / coworking  avec une vidéo sur mesure !'
 			},
-			price: 399,
+			price: 390,
 			duration: 90,
 			img: '/office.webp'
 		},
@@ -62,7 +76,7 @@
 				title: 'Hôtels et hébergements locatifs',
 				description: 'Faites découvrir votre complexe hôtellier à travers une vidéo immersive !'
 			},
-			price: 399,
+			price: 390,
 			duration: 90,
 			img: '/hotel.jpeg'
 		},
@@ -78,7 +92,7 @@
 				description:
 					"Capturez et partagez l'avancement de vos projets de construction comme jamais auparavant !"
 			},
-			price: 299,
+			price: 290,
 			duration: 60,
 			img: '/construction.jpeg'
 		}
