@@ -51,7 +51,9 @@ const translations = {
 		loading_propellers: 'Screwing propellers',
 		loading_battery: 'Plug in the battery',
 		loading_camera: 'Turning on the camera',
-		loading_takeoff: 'Getting ready for take-off'
+		loading_takeoff: 'Getting ready for take-off',
+		discover_services: 'Discover what the services we offer by clicking ',
+		discover_here: 'here'
 	},
 	fr: {
 		header_company_name: 'DronInside',
@@ -106,7 +108,9 @@ const translations = {
 		loading_propellers: 'On visse les hélices',
 		loading_battery: 'On branche la batterie',
 		loading_camera: 'On allume la caméra',
-		loading_takeoff: 'Et on se prépare au décollage'
+		loading_takeoff: 'Et on se prépare au décollage',
+		discover_services: 'Découvres les services que nous proposons en cliquant ',
+		discover_here: 'ici !'
 	}
 };
 
