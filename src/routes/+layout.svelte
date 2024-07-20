@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui/button/index.js';
 	import { goto } from '$app/navigation';
-	import Footer from '$lib/Footer.svelte';
+	import Footer from '$lib/components/ux/Footer.svelte';
 	import translate from '$lib/locales/function';
 	import '../app.css';
 	import { page } from '$app/stores';
@@ -34,12 +34,12 @@
 
 <svelte:head>
 	{#if darktheme}
-		<link rel="icon" href="/icons/favicon.ico" />
-		<link rel="apple-touch-icon" href="/icons/favicon.png" />
-		<meta name="theme-color" content="#000000" />
-	{:else}
 		<link rel="icon" href="/icons/favicon-white.ico" />
 		<link rel="apple-touch-icon" href="/icons/favicon-white.png" />
+		<meta name="theme-color" content="#000000" />
+	{:else}
+		<link rel="icon" href="/icons/favicon.ico" />
+		<link rel="apple-touch-icon" href="/icons/favicon.png" />
 		<meta name="theme-color" content="#ffffff" />
 	{/if}
 </svelte:head>
@@ -52,7 +52,7 @@
 					<button class="flex flex-row" on:click={() => goto('/')}>
 						<div class="flex">
 							<span class="sr-only">Home</span>
-							<img class="h-8 w-auto sm:h-10" src="/logo.png" alt="Logo" />
+							<img class="h-8 w-auto sm:h-10" src="/logo.jpg" alt="Logo" />
 						</div>
 					</button>
 				</div>
