@@ -52,7 +52,7 @@ const translations = {
 		loading_battery: 'Plug in the battery',
 		loading_camera: 'Turning on the camera',
 		loading_takeoff: 'Getting ready for take-off',
-		discover_services: 'Discover what the services we offer by clicking ',
+		discover_services: 'Discover the services we are offering by clicking ',
 		discover_here: 'here'
 	},
 	fr: {
