@@ -63,7 +63,7 @@
 	<title>Contact | DronInside</title>
 </svelte:head>
 
-<div class="flex min-h-screen w-full flex-col justify-center align-middle">
+<div class="flex min-h-screen w-full flex-col justify-center px-4 align-middle md:px-24">
 	{#if isSubmitted}
 		<div class="-mt-20 flex flex-col self-center pb-4 pt-8 align-middle">
 			<h1 class="text-2xl font-bold text-black sm:text-3xl">
