@@ -34,7 +34,7 @@ const translations = {
 		sendButton: 'Send',
 		cancelButton: 'Cancel',
 		services_duration: 'On site for',
-		services_price: 'Starting from',
+		services_price: 'Starting at',
 		services_title: 'We fly drones indoors to create seamless video tours',
 		service_subtitle:
 			'The premier virtual tour for commercial real estate, businesses, hotels, apartment leasing, & more',
