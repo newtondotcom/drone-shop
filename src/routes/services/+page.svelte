@@ -120,7 +120,7 @@
 	<div class="grid grid-cols-1 gap-4 px-4 sm:grid-cols-2 md:grid-cols-3 md:px-24 lg:grid-cols-3">
 		{#each services as service}
 			<button on:click={() => goto(`/contact`)}>
-				<Card.Root>
+				<Card.Root class="h-full">
 					<Card.Header class="text-left">
 						<Card.Title>{service.title}</Card.Title>
 						<Card.Description>{service.description}</Card.Description>
