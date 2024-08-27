@@ -1,14 +1,17 @@
 <script lang="ts">
-	import { Button } from '$lib/components/ui/button/index.js';
 	import { goto } from '$app/navigation';
+	import { Button } from '$lib/components/ui/button/index.js';
 	import Footer from '$lib/components/ux/Footer.svelte';
 	import translate from '$lib/locales/function';
+
 	import '../app.css';
+
 	import { page } from '$app/stores';
 
 	import '$lib/nprogress.css';
-	import NProgress from 'nprogress';
+
 	import { navigating } from '$app/stores';
+	import NProgress from 'nprogress';
 
 	NProgress.configure({
 		minimum: 0.16

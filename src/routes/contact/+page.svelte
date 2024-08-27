@@ -1,13 +1,14 @@
 <script lang="ts">
-	import { sendToDiscordWebhook } from './discord';
-	import translate from '$lib/locales/function';
 	import { goto } from '$app/navigation';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import * as Card from '$lib/components/ui/card/index.js';
-	import * as Select from '$lib/components/ui/select/index.js';
 	import { Input } from '$lib/components/ui/input/index.js';
 	import { Label } from '$lib/components/ui/label/index.js';
+	import * as Select from '$lib/components/ui/select/index.js';
 	import { Textarea } from '$lib/components/ui/textarea/index.js';
+	import translate from '$lib/locales/function';
+
+	import { sendToDiscordWebhook } from './discord';
 
 	const services = [
 		{

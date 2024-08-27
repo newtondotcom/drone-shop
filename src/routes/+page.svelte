@@ -1,10 +1,10 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
+	import GridBg from '$lib/components/aceternity/GridBg.svelte';
+	import Spotlight from '$lib/components/aceternity/Spotlight.svelte';
 	import { Button } from '$lib/components/ui/button/index.js';
 	import Divider from '$lib/components/ux/Divider.svelte';
 	import translate from '$lib/locales/function';
-	import { goto } from '$app/navigation';
-	import Spotlight from '$lib/components/aceternity/Spotlight.svelte';
-	import GridBg from '$lib/components/aceternity/GridBg.svelte';
 	import { YouTube as YTB } from 'sveltekit-embed';
 </script>
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import translate from '$lib/locales/function';
 	import { page } from '$app/stores';
+	import translate from '$lib/locales/function';
 </script>
 
 <footer class="flex">

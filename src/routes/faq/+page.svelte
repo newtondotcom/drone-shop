@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import * as Accordion from '$lib/components/ui/accordion';
 	import translate from '$lib/locales/function';
+	import { onMount } from 'svelte';
 
 	let questions = [
 		{

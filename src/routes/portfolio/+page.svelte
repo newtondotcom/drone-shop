@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Youtube from 'svelte-youtube-embed';
-	import { onMount } from 'svelte';
 	import Title from '$lib/components/ux/Title.svelte';
 	import translate from '$lib/locales/function';
+	import { onMount } from 'svelte';
+	import Youtube from 'svelte-youtube-embed';
 
 	let videos = [
 		{

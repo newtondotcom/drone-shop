@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import * as Card from '$lib/components/ui/card';
 	import Title from '$lib/components/ux/Title.svelte';
 	import translate from '$lib/locales/function';
 	import { onMount } from 'svelte';
-	import * as Card from '$lib/components/ui/card';
 
 	let services = [
 		{
